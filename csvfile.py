@@ -53,7 +53,7 @@ filtered_df = df[df["Country"].isin(countries)]
 ##To see if all images are there
 
 # Specify the folder path where your PNG files are located
-folder_path = '/images_noaxis'
+folder_path = 'images_noaxis'
 
 # Use glob to find all PNG files in the folder
 png_files = glob.glob(os.path.join(folder_path, '*.png'))
@@ -65,8 +65,8 @@ file_names = [os.path.basename(file).split('.')[0] for file in png_files]
 
 
 
-path_image = ('https://github.com/amrutha-b-nair/Country_shape_quiz/tree/main/images_noaxis/' + filtered_df["Country"] + '.png').tolist()
-filtered_df.loc[:,'Image_path'] = path_image
+# path_image = ('images_noaxis/' + filtered_df["Country"] + '.png').tolist()
+filtered_df.loc[:,'Image_path'] = 'images_noaxis/' + filtered_df["Country"] + '.png'
 
 # print([country for country in df["Country"].tolist() if country not in countries ])
 # print([entry for entry in countries if entry not in df['Country'].tolist()]
