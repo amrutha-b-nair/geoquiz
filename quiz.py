@@ -5,13 +5,13 @@ from PIL import Image, ImageTk
 # Read the CSV file
 def read_csv(filename):
     questions = []
-    answers = []
+    alt_names = []
     with open(filename, 'r', newline='') as file:
         reader = csv.DictReader(file)
         for row in reader:
             questions.append(row['Image_path'])
-            answers.append(row['Country'])
-    return questions, answers
+            alt_names.append(row['Other names'])
+    return questions, alt_names
 
 # Initialize the quiz
 def start_quiz():
@@ -53,7 +53,7 @@ def display_question():
 def check_answer():
     global current_question, score
     user_answer = answer_entry.get()
-    if user_answer.lower() == answers[current_question].lower():
+    if user_answer.lower() in alt_names[current_question].lower():
         score += 1
     current_question += 1
     display_question()
@@ -76,7 +76,7 @@ def finish_quiz():
     
 
 # Load questions and answers from CSV
-questions, answers = read_csv('selected_names.csv')
+questions, alt_names = read_csv('selected_names.csv')
 
 # Create the quiz GUI
 root = Tk()
