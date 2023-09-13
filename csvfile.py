@@ -53,7 +53,7 @@ filtered_df = df[df["Country"].isin(countries)]
 ##To see if all images are there
 
 # Specify the folder path where your PNG files are located
-folder_path = '/home/allu/quiz/images_noaxis'
+folder_path = '/images_noaxis'
 
 # Use glob to find all PNG files in the folder
 png_files = glob.glob(os.path.join(folder_path, '*.png'))
@@ -65,7 +65,7 @@ file_names = [os.path.basename(file).split('.')[0] for file in png_files]
 
 
 
-path_image = ('/home/allu/quiz/images/' + filtered_df["Country"] + '.png').tolist()
+path_image = ('https://github.com/amrutha-b-nair/Country_shape_quiz/tree/main/images_noaxis/' + filtered_df["Country"] + '.png').tolist()
 filtered_df.loc[:,'Image_path'] = path_image
 
 # print([country for country in df["Country"].tolist() if country not in countries ])
@@ -77,5 +77,8 @@ filtered_csv = 'selected_names.csv'
 
 # Save the filtered DataFrame as a new CSV file
 filtered_df.to_csv(filtered_csv, index=False)
+
+
+print((filtered_df['Other names']).tolist()[0])
 
 
