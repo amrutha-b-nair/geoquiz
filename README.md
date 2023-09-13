@@ -1,4 +1,4 @@
-# Country_shape_quiz
+# Country shape quiz
 
 ## Guess the country from its shape!! 
 This is a Python quiz application that allows users to take a quiz with questions displayed alongside images. 
