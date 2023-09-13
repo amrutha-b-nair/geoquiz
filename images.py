@@ -2,7 +2,7 @@ import geopandas as gpd
 import matplotlib.pyplot as plt
 import os
 # Load the GeoJSON file using geopandas
-geojson_file = "/home/allu/quiz/world.geo.json"
+geojson_file = "geojson files/world.geo.json"
 gdf = gpd.read_file(geojson_file)
 print(len(gdf))
 
@@ -23,7 +23,7 @@ for index, Feature in gdf.iterrows():
         # # Optionally, you can customize the plot further, such as adding titles or labels.
 
         # Save the plot as an image file (e.g., PNG)
-        output_image = f"/home/allu/quiz/images_noaxis/{country_name}.png"
+        output_image = f"images_noaxis/{country_name}.png"
         plt.savefig(output_image, dpi=300, bbox_inches="tight")
 
         # Close the plot to free up memory

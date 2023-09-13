@@ -6,9 +6,11 @@ from PIL import Image, ImageTk
 def read_csv(filename):
     questions = []
     alt_names = []
+    image_answers = []
     with open(filename, 'r', newline='') as file:
         reader = csv.DictReader(file)
         for row in reader:
+            image_answers.append([row['Image_path'],  row['Other names']])
             questions.append(row['Image_path'])
             alt_names.append(row['Other names'])
     return questions, alt_names
@@ -53,7 +55,7 @@ def display_question():
 def check_answer():
     global current_question, score
     user_answer = answer_entry.get()
-    if user_answer.lower() in alt_names[current_question].lower():
+    if user_answer.lower()!= '' and user_answer.lower() in alt_names[current_question].lower():
         score += 1
     current_question += 1
     display_question()
@@ -74,6 +76,19 @@ def finish_quiz():
     finish_button.pack_forget()
     score_label.pack_forget()
     
+def on_enter_key(event):
+    # Check if any button is currently in focus
+    focused_widget = root.focus_get()
+    
+    if isinstance(focused_widget, Button):
+        # If a button is in focus, simulate its click
+        button_name = focused_widget.cget("text")
+        buttons[button_name].invoke()
+    elif submit_button.winfo_ismapped():
+        # If no button is in focus, simulate the "Submit" button click
+        submit_button.invoke()
+    elif start_button.winfo_ismapped():
+        start_button.invoke()
 
 # Load questions and answers from CSV
 questions, alt_names = read_csv('selected_names.csv')
@@ -102,6 +117,7 @@ answer_entry = Entry(frame2)
 
 
 submit_button = Button(frame3, text="Submit", command=check_answer)
+submit_button.bind("<Return>", lambda event=None: submit_button.invoke())
 
 
 start_button = Button(root, text="Start Quiz", command=start_quiz)
@@ -113,7 +129,10 @@ finish_button = Button(frame3, text="Finish Quiz", command=finish_quiz)
 result_label = Label(root, text="")
 # result_label.pack()
 
-score_label = Label(frame1, text="")
+buttons = {"Finish Quiz": finish_button, "Start Quiz": start_button, 
+           "Submit": submit_button}
 
+score_label = Label(frame1, text="")
+root.bind("<Return>", on_enter_key)
 
 root.mainloop()
