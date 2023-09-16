@@ -2,6 +2,8 @@ import csv
 from tkinter import *
 from PIL import Image, ImageTk
 import random
+import pygame
+
 
 # Read the CSV file
 def read_csv(filename):
@@ -62,11 +64,13 @@ def check_answer():
     time_to_wait = 200
     if user_answer.lower() in image_answers[current_question][1]:
         score += 1
+        correct_sound.play()
         submit_button.config(bg="green")
         root.update()
         root.after(500, reset_button_color)
     else:
         submit_button.config(bg="red")
+        wrong_sound.play()
         if answer_display:
             correct_answer_label.config(text=f"Correct Answer: {image_answers[current_question][2]}")
             print(image_answers[current_question][2])
@@ -142,6 +146,11 @@ def no_show_answer():
     all_country.place(relx=0.5, rely=0.5, anchor=CENTER)
     ten_countries.place(relx=0.5, rely=0.4, anchor=CENTER)
     answer_display = False
+
+pygame.init()
+correct_sound = pygame.mixer.Sound('sound/correct.wav')  # Replace 'correct.wav' with your correct answer sound file
+wrong_sound = pygame.mixer.Sound('sound/wrong.mp3')  # Replace 'wrong.wav' with your wrong answer sound file
+
 
 # Load questions and answers from CSV
 image_answers_all = read_csv('selected_names.csv')
