@@ -1,5 +1,6 @@
 import csv
 import pandas as pd
+import re
 
 import os
 import glob
@@ -74,11 +75,17 @@ filtered_df.loc[:,'Image_path'] = 'images_noaxis/' + filtered_df["Country"] + '.
 
 # Specify the path where the filtered CSV file will be saved
 filtered_csv = 'selected_names.csv'
+# Remove extra commas and spaces, split each row by commas, and join using a single comma
+filtered_df.loc[:, 'Other names'] = filtered_df['Other names'].str.replace(r'\s*,\s*', ',').str.split(',')
 
-# Save the filtered DataFrame as a new CSV file
+# Remove empty strings from the list
+filtered_df.loc[:,'Other names'] = filtered_df['Other names'].apply(lambda x: [item.strip() for item in x if item.strip() != ''])
+
+# Join the list elements using a single comma
+filtered_df.loc[:, 'Other names'] = filtered_df['Other names'].apply(lambda x: ','.join(x))
+
+# print(filtered_df['Other names'].tolist())
+
 filtered_df.to_csv(filtered_csv, index=False)
-
-
-print((filtered_df['Other names']).tolist()[0])
 
 
