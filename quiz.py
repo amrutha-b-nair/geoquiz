@@ -10,7 +10,8 @@ def read_csv(filename):
     with open(filename, 'r', newline='') as file:
         reader = csv.DictReader(file)
         for row in reader:
-            image_answers.append([row['Image_path'],  row['Other names']])
+            image_answers.append([row['Image_path'],  row['Other names'].lower().split(','),
+                                  row['Country']])
     return image_answers
 
 # Initialize the quiz
@@ -35,7 +36,9 @@ def start_quiz():
 # Display the current question
 def display_question():
     global current_question, score
+    correct_answer_label.config(text="")
     if current_question < len(image_answers):
+        # submit_button.config(bg="light gray")
         image_path = image_answers[current_question][0]
         img = Image.open(image_path)
         width, height = img.size
@@ -54,13 +57,32 @@ def display_question():
 
 # Check the user's answer
 def check_answer():
-    global current_question, score
+    global current_question, score, answer_display
     user_answer = answer_entry.get()
-    if user_answer.lower()!= '' and user_answer.lower() in image_answers[current_question][1].lower():
+    if user_answer.lower() in image_answers[current_question][1]:
         score += 1
+        submit_button.config(bg="green")
+        root.update()
+        root.after(500, reset_button_color)
+    else:
+        submit_button.config(bg="red")
+        time_to_wait = 200
+        if answer_display:
+            correct_answer_label.config(text=f"Correct Answer: {image_answers[current_question][2]}")
+            print(image_answers[current_question][2])
+            correct_answer_label.place_forget()
+            time_to_wait = 1000
+        root.update()
+        root.after(500, reset_button_color)
     current_question += 1
-    display_question()
+    root.after(time_to_wait,display_question())
     update_score_label()
+
+
+
+def reset_button_color():
+    submit_button.config(bg="light gray")
+
 
 
 def update_score_label():
@@ -94,22 +116,34 @@ def on_enter_key(event):
 def select_quiz():
     result_label.place_forget()
     start_button.place_forget()
-    all_country.place(relx=0.5, rely=0.5, anchor=CENTER)
-    ten_countries.place(relx=0.5, rely=0.4, anchor=CENTER)
+    show_correct_answer.place(relx=0.5, rely=0.5, anchor=CENTER)
+    no_correct_answer.place(relx=0.5, rely=0.4, anchor=CENTER)
+    
 
 def quiz_type(k):
     global image_answers
-    image_answers = random.sample(image_answers, k)
+    image_answers = random.sample(image_answers_all, k)
     start_quiz()
 
-def quiz_type_all():
-    global image_answers
-    image_answers = random.sample(image_answers, len(image_answers))
-    start_quiz()
+def show_answer():
+    global answer_display
+    show_correct_answer.place_forget()
+    no_correct_answer.place_forget()
+    all_country.place(relx=0.5, rely=0.5, anchor=CENTER)
+    ten_countries.place(relx=0.5, rely=0.4, anchor=CENTER)
+    answer_display = True
+
+
+def no_show_answer():
+    global answer_display
+    show_correct_answer.place_forget()
+    no_correct_answer.place_forget()
+    all_country.place(relx=0.5, rely=0.5, anchor=CENTER)
+    ten_countries.place(relx=0.5, rely=0.4, anchor=CENTER)
+    answer_display = False
 
 # Load questions and answers from CSV
-image_answers = read_csv('selected_names.csv')
-print(len(image_answers))
+image_answers_all = read_csv('selected_names.csv')
 # Create the quiz GUI
 root = Tk()
 root.title("Quiz")
@@ -128,7 +162,8 @@ image_label = Label(frame1)
 
 
 answer_label = Label(frame2, text="Your Answer:")
-
+correct_answer_label = Label(frame3, text="")
+correct_answer_label.pack()
 
 answer_entry = Entry(frame2)
 
@@ -141,7 +176,12 @@ start_button = Button(root, text="Start Quiz", command=select_quiz)
 start_button.place(relx=0.5, rely=0.5, anchor=CENTER)
 # start_button.pack()
 
+
+show_correct_answer = Button(root, text="Show correct answer", command=show_answer)
+no_correct_answer = Button(root, text="Don't show answer", command=no_show_answer)
+
 finish_button = Button(frame3, text="Finish Quiz", command=finish_quiz)
+
 
 result_label = Label(root, text="")
 # result_label.pack()
@@ -152,7 +192,8 @@ ten_countries = Button(root, text="10 countries", command=lambda: quiz_type(10))
 
 buttons = {"Finish Quiz": finish_button, "Start Quiz": start_button, 
            "Submit": submit_button, "10 countries": ten_countries, 
-           "All countries": all_country}
+           "All countries": all_country, "Show correct answer": show_correct_answer,
+           "Don't show answer": no_correct_answer}
 
 score_label = Label(frame1, text="")
 root.bind("<Return>", on_enter_key)
