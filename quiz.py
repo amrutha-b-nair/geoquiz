@@ -59,6 +59,7 @@ def display_question():
 def check_answer():
     global current_question, score, answer_display
     user_answer = answer_entry.get()
+    time_to_wait = 200
     if user_answer.lower() in image_answers[current_question][1]:
         score += 1
         submit_button.config(bg="green")
@@ -66,7 +67,6 @@ def check_answer():
         root.after(500, reset_button_color)
     else:
         submit_button.config(bg="red")
-        time_to_wait = 200
         if answer_display:
             correct_answer_label.config(text=f"Correct Answer: {image_answers[current_question][2]}")
             print(image_answers[current_question][2])
@@ -138,6 +138,7 @@ def no_show_answer():
     global answer_display
     show_correct_answer.place_forget()
     no_correct_answer.place_forget()
+    correct_answer_label.pack_forget()
     all_country.place(relx=0.5, rely=0.5, anchor=CENTER)
     ten_countries.place(relx=0.5, rely=0.4, anchor=CENTER)
     answer_display = False
