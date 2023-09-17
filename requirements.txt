@@ -1,0 +1,4 @@
+# External Python libraries installed via pip
+Pillow>=8.0.0  # for working with images
+fuzzywuzzy>=0.18.0  # for fuzzy string matching
+pygame
