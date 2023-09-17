@@ -3,7 +3,7 @@ from tkinter import *
 from PIL import Image, ImageTk
 import random
 import pygame
-
+from fuzzywuzzy import fuzz
 
 # Read the CSV file
 def read_csv(filename):
@@ -29,6 +29,7 @@ def start_quiz():
     image_label.pack(pady=10)
     answer_label.pack(side = LEFT, padx = 5)
     answer_entry.pack(side = RIGHT)
+    answer_entry.focus_set()
     submit_button.pack(pady=10)
     finish_button.pack()
     update_score_label()
@@ -64,25 +65,39 @@ def check_answer():
     time_to_wait = 200
     if user_answer.lower() in image_answers[current_question][1]:
         score += 1
-        correct_sound.play()
-        submit_button.config(bg="green")
-        root.update()
-        root.after(500, reset_button_color)
+        correct() 
     else:
-        submit_button.config(bg="red")
-        wrong_sound.play()
-        if answer_display:
-            correct_answer_label.config(text=f"Correct Answer: {image_answers[current_question][2]}")
-            print(image_answers[current_question][2])
-            correct_answer_label.place_forget()
-            time_to_wait = 1000
-        root.update()
-        root.after(500, reset_button_color)
+        if check_similarity(user_answer):
+            score += 1
+            correct()
+        else:
+            submit_button.config(bg="red")
+            wrong_sound.play()
+            if answer_display:
+                correct_answer_label.config(text=f"Correct Answer: {image_answers[current_question][2]}")
+                correct_answer_label.place_forget()
+                time_to_wait = 1000
+            root.update()
+            root.after(500, reset_button_color)
     current_question += 1
     root.after(time_to_wait,display_question())
     update_score_label()
 
+def check_similarity(user_answer):
+    global current_question
+    similarity = []
+    for answer in image_answers[current_question][1]:
+        similarity_ratio = fuzz.ratio(user_answer, answer)
+        similarity.append(similarity_ratio)
+    similarity_score = max(similarity)
+    if similarity_score > 85:
+        return True
 
+def correct():
+    correct_sound.play()
+    submit_button.config(bg="green")
+    root.update()
+    root.after(500, reset_button_color)
 
 def reset_button_color():
     submit_button.config(bg="light gray")
@@ -100,6 +115,7 @@ def finish_quiz():
     answer_label.pack_forget()
     submit_button.pack_forget()
     answer_entry.pack_forget()
+    root.focus_set()
     finish_button.pack_forget()
     score_label.pack_forget()
     
@@ -107,15 +123,17 @@ def finish_quiz():
 def on_enter_key(event):
     # Check if any button is currently in focus
     focused_widget = root.focus_get()
-    if isinstance(focused_widget, Button):
+    if isinstance(focused_widget, Button) and focused_widget.winfo_ismapped():
         # If a button is in focus, simulate its click
         button_name = focused_widget.cget("text")
         buttons[button_name].invoke()
-    elif submit_button.winfo_ismapped():
+    elif submit_button.winfo_ismapped() and (focused_widget == answer_entry):
         # If no button is in focus, simulate the "Submit" button click
         submit_button.invoke()
     elif start_button.winfo_ismapped():
         start_button.invoke()
+
+        
 
 def select_quiz():
     result_label.place_forget()
@@ -171,33 +189,33 @@ frame3.pack(pady=10)
 image_label = Label(frame1)
 
 
-answer_label = Label(frame2, text="Your Answer:")
-correct_answer_label = Label(frame3, text="")
+answer_label = Label(frame2, text="Your Answer:",font=("Helvetica", 15),)
+correct_answer_label = Label(frame3, font=("Helvetica", 15),text="")
 correct_answer_label.pack()
 
-answer_entry = Entry(frame2)
+answer_entry = Entry(frame2,font=("Helvetica", 15))
 
 
-submit_button = Button(frame3, text="Submit", command=check_answer)
-submit_button.bind("<Return>", lambda event=None: submit_button.invoke())
+submit_button = Button(frame3, text="Submit",font=("Helvetica", 15), command=check_answer)
+# submit_button.bind("<Return>", lambda event=None: submit_button.invoke())
 
 
-start_button = Button(root, text="Start Quiz", command=select_quiz)
+start_button = Button(root, text="Start Quiz",font=("Helvetica", 20), command=select_quiz)
 start_button.place(relx=0.5, rely=0.5, anchor=CENTER)
 # start_button.pack()
 
 
-show_correct_answer = Button(root, text="Show correct answer", command=show_answer)
-no_correct_answer = Button(root, text="Don't show answer", command=no_show_answer)
+show_correct_answer = Button(root, text="Show correct answer",font=("Helvetica", 15), command=show_answer)
+no_correct_answer = Button(root, text="Don't show answer", font=("Helvetica", 15), command=no_show_answer)
 
-finish_button = Button(frame3, text="Finish Quiz", command=finish_quiz)
+finish_button = Button(frame3, text="Finish Quiz",font=("Helvetica", 15), command=finish_quiz)
 
 
-result_label = Label(root, text="")
+result_label = Label(root,font=("Helvetica", 15), text="")
 # result_label.pack()
-all_country = Button(root, text="All countries", command=lambda: quiz_type(len(image_answers)))
+all_country = Button(root, text="All countries",font=("Helvetica", 15), command=lambda: quiz_type(len(image_answers)))
 
-ten_countries = Button(root, text="10 countries", command=lambda: quiz_type(10))
+ten_countries = Button(root, text="10 countries",font=("Helvetica", 15), command=lambda: quiz_type(10))
 
 
 buttons = {"Finish Quiz": finish_button, "Start Quiz": start_button, 
@@ -205,7 +223,7 @@ buttons = {"Finish Quiz": finish_button, "Start Quiz": start_button,
            "All countries": all_country, "Show correct answer": show_correct_answer,
            "Don't show answer": no_correct_answer}
 
-score_label = Label(frame1, text="")
+score_label = Label(frame1,font=("Helvetica", 15), text="")
 root.bind("<Return>", on_enter_key)
 
 root.mainloop()
