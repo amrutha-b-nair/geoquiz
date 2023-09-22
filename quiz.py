@@ -1,5 +1,6 @@
 import csv
 from tkinter import *
+from tkinter import messagebox
 from PIL import Image, ImageTk
 import random
 import pygame
@@ -30,11 +31,15 @@ def start_quiz():
     number_submit.pack_forget()
     center_frame.pack_forget()
     button_frame.pack_forget()
+    row_frame.pack_forget()
     score_label.pack(pady=10)
+    frame1.pack(pady=10) 
     image_label.pack(pady=10)
+    frame2.pack(pady=10)
     answer_label.pack(side = LEFT, padx = 5)
     answer_entry.pack(side = RIGHT)
     answer_entry.focus_set()
+    frame3.pack(pady=10) 
     submit_button.pack(pady=10)
     finish_button.pack()
     update_score_label()
@@ -55,9 +60,9 @@ def display_question():
         photo = ImageTk.PhotoImage(img)
         image_label.config(image=photo)
         image_label.image = photo
-
         answer_entry.delete(0, END)
     else:
+        finish_button.pack_forget()
         result_label.config(text=f"Your Score: {score}/{len(image_answers)}")
         finish_quiz()
 
@@ -117,8 +122,11 @@ def finish_quiz():
     start_button.place(relx=0.5, rely=0.5, anchor=CENTER)
     result_label.config(text=f"Your Score: {score}/{len(image_answers)}")
     image_label.pack_forget()
+    frame1.pack_forget()
     answer_label.pack_forget()
+    frame2.pack_forget()
     submit_button.pack_forget()
+    frame3.pack_forget()
     answer_entry.pack_forget()
     root.focus_set()
     finish_button.pack_forget()
@@ -161,7 +169,6 @@ def show_answer(k):
     no_correct_answer.place_forget()
     random_button.place(relx=0.5, rely=0.5, anchor=CENTER)
     order_button.place(relx=0.5, rely=0.4, anchor=CENTER)
-    print("success")
     if k == True:
         answer_display = True
     elif k == False:
@@ -169,19 +176,9 @@ def show_answer(k):
         correct_answer_label.place_forget()
 
 
-# def no_show_answer():
-#     global answer_display
-#     show_correct_answer.place_forget()
-#     no_correct_answer.place_forget()
-#     correct_answer_label.pack_forget()
-#     random_button.place(relx=0.5, rely=0.5, anchor=CENTER)
-#     order_button.place(relx=0.5, rely=0.4, anchor=CENTER)
-#     answer_display = False
-
 def ordering(k):
     global order 
     order = k
-    print(order)
     random_button.place_forget()
     order_button.place_forget()
     center_frame.pack(expand=True, fill=BOTH)
@@ -192,6 +189,14 @@ def ordering(k):
     enter_number.pack(side=LEFT, padx=10, pady=10)
     number_countries.pack(side=LEFT, padx=10, pady=10)
     number_submit.pack(side=LEFT, padx=10, pady=10)
+
+def quiz_length():
+    user_input = number_countries.get()
+    try:
+        n = int(user_input)
+        quiz_type(n)
+    except ValueError:
+        messagebox.showerror("Error", "Please enter a valid integer")
 
 pygame.init()
 correct_sound = pygame.mixer.Sound('sound/correct.wav')  # Replace 'correct.wav' with your correct answer sound file
@@ -206,13 +211,13 @@ root.title("Quiz")
 root.geometry("600x700")
 
 frame1 = Frame(root)
-frame1.pack(pady=10)  # Add vertical space
+# frame1.pack(pady=10)  # Add vertical space
 
 frame2 = Frame(root)
-frame2.pack(pady=10) 
+# frame2.pack(pady=10) 
 
 frame3 = Frame(root)
-frame3.pack(pady=10) 
+# frame3.pack(pady=10) 
 
 image_label = Label(frame1)
 
@@ -246,11 +251,14 @@ result_label = Label(root,font=("Helvetica", 15), text="")
 center_frame = Frame(root)
 button_frame = Frame(center_frame)
 row_frame = Frame(center_frame)
+# button_frame.pack()
+# row_frame.pack()
+# center_frame.pack(expand=True, fill=BOTH)
 
-all_country = Button(button_frame, text="All countries",font=("Helvetica", 15), command=lambda: quiz_type(len(image_answers)))
+all_country = Button(button_frame, text="All countries",font=("Helvetica", 15), command=lambda: quiz_type(len(image_answers_all)))
 ten_countries = Button(button_frame, text="10 countries",font=("Helvetica", 15), command=lambda: quiz_type(10))
 number_countries = Entry(row_frame,font=("Helvetica", 15))
-number_submit = Button(row_frame, text="Go",font=("Helvetica", 15), command=lambda: quiz_type(int(number_countries.get()))())
+number_submit = Button(row_frame, text="Go",font=("Helvetica", 15), command=lambda: quiz_length())
 enter_number = Label(row_frame, text="Number of countries:",font=("Helvetica", 15),)
 
 random_button = Button(root, text = "Random order", font=("Helvetica", 15), command = lambda: ordering(False))
