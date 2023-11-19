@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "geoquiz"
+version = "0.1.0"
+description = "A game where you have"
+authors = ["amrutha-b-nair <amruthabn00@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pillow = "^10.1.0"
+fuzzywuzzy = "^0.18.0"
+pygame = "^2.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+geoquiz = "geoquiz.quiz:main"
