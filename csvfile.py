@@ -8,7 +8,7 @@ import glob
 
 # Load the CSV file into a DataFrame
 df= pd.read_csv('alt_names.csv')
-
+gdp_df = pd.read_csv('gdp_area.csv')
 
 countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda",
             "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "The Bahamas", 
@@ -48,8 +48,11 @@ countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua 
             "Zambia", "Zimbabwe"]
 
 
+
+
 # Filter the DataFrame to keep only rows where the column matches items in the list
 filtered_df = df[df["Country"].isin(countries)]
+
 
 ##To see if all images are there
 
@@ -74,7 +77,7 @@ filtered_df.loc[:,'Image_path'] = 'images_noaxis/' + filtered_df["Country"] + '.
 # )
 
 # Specify the path where the filtered CSV file will be saved
-filtered_csv = 'selected_names.csv'
+
 # Remove extra commas and spaces, split each row by commas, and join using a single comma
 filtered_df.loc[:, 'Other names'] = filtered_df['Other names'].str.replace(r'\s*,\s*', ',').str.split(',')
 
@@ -84,8 +87,12 @@ filtered_df.loc[:,'Other names'] = filtered_df['Other names'].apply(lambda x: [i
 # Join the list elements using a single comma
 filtered_df.loc[:, 'Other names'] = filtered_df['Other names'].apply(lambda x: ','.join(x))
 
-# print(filtered_df['Other names'].tolist())
 
-filtered_df.to_csv(filtered_csv, index=False)
+# print(filtered_df['Other names'].tolist())
+merged_df = pd.merge(filtered_df, gdp_df, on='Country', how='left')
+df_sorted = merged_df.sort_values(by='Value', ascending=False)
+
+filtered_csv = 'selected_names.csv'
+df_sorted.to_csv(filtered_csv, index=False)
 
 

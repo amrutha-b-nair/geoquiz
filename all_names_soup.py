@@ -98,9 +98,11 @@ tables_df["Other names"] = tables_df["Other names"].apply(remove_non_latin)
 
 tables_df.loc[tables_df['Country'] == 'Republic of China', 'Country'] = 'Taiwan'
 
+print((tables_df['Other names']).tolist()[1])
+
 tables_df["Other names"] = tables_df['Country'] +',' +tables_df["Other names"]
 
-
+print((tables_df['Other names']).tolist()[1])
 
 fname = "alt_names.csv"
 tables_df.to_csv(fname, index=False)   
@@ -108,9 +110,9 @@ tables_df.to_csv(fname, index=False)
 df1 = pd.read_csv('alt_names.csv')
 
 # Display the first five rows of the DataFrame
-print(df1)
+# print(df1)
 
-print(list(df1["Other names"]))
+# print(list(df1["Other names"]))
 
-print(list(df1["Country"]))
+# print(list(df1["Country"]))
 
