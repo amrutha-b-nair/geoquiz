@@ -5,7 +5,7 @@ from PIL import Image, ImageTk
 import random
 import pygame
 from fuzzywuzzy import fuzz
-import os
+import importlib
 
 # Read the CSV file
 def read_csv(filename):
@@ -53,7 +53,9 @@ def display_question():
     correct_answer_label.config(text="")
     if current_question < len(image_answers):
         # submit_button.config(bg="light gray")
-        image_path = image_answers[current_question][0]
+        image_name = image_answers[current_question][0]
+        with importlib.resources.path(__package__, 'images_noaxis') as image_folder:
+            image_path = str(image_folder/image_name)
         img = Image.open(image_path)
         width, height = img.size
         to_resize = float(400/max(width,height))
@@ -200,15 +202,14 @@ def quiz_length():
         messagebox.showerror("Error", "Please enter a valid integer")
 
 pygame.init()
-script_dir = os.path.dirname(os.path.abspath(__file__))
-correct_sound_path = os.path.join(script_dir, '..', 'sound', 'correct.wav')
-wrong_sound_path = os.path.join(script_dir, '..', 'sound', 'wrong.mp3')
-correct_sound = pygame.mixer.Sound(correct_sound_path)  # Replace 'correct.wav' with your correct answer sound file
-wrong_sound = pygame.mixer.Sound(wrong_sound_path)  # Replace 'wrong.wav' with your wrong answer sound file
 
+with importlib.resources.path(__package__, 'sound') as sound_folder:
+    correct_sound = pygame.mixer.Sound(str(sound_folder / 'correct.wav'))
+    wrong_sound = pygame.mixer.Sound(str(sound_folder /'wrong.mp3')) 
 
 # Load questions and answers from CSV
-image_answers_all = read_csv('selected_names.csv')
+with importlib.resources.path(__package__, 'csv') as csv_folder:
+    image_answers_all = read_csv(str(csv_folder /'selected_names.csv'))
 # Create the quiz GUI
 root = Tk()
 root.title("Quiz")

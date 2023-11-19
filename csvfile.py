@@ -70,7 +70,7 @@ file_names = [os.path.basename(file).split('.')[0] for file in png_files]
 
 
 # path_image = ('images_noaxis/' + filtered_df["Country"] + '.png').tolist()
-filtered_df.loc[:,'Image_path'] = 'images_noaxis/' + filtered_df["Country"] + '.png'
+filtered_df.loc[:,'Image_path'] = filtered_df["Country"] + '.png'
 
 # print([country for country in df["Country"].tolist() if country not in countries ])
 # print([entry for entry in countries if entry not in df['Country'].tolist()]
@@ -92,7 +92,7 @@ filtered_df.loc[:, 'Other names'] = filtered_df['Other names'].apply(lambda x: '
 merged_df = pd.merge(filtered_df, gdp_df, on='Country', how='left')
 df_sorted = merged_df.sort_values(by='Value', ascending=False)
 
-filtered_csv = 'selected_names.csv'
+filtered_csv = 'geoquiz/csv/selected_names.csv'
 df_sorted.to_csv(filtered_csv, index=False)
 
 
