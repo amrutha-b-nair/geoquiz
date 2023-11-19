@@ -5,6 +5,7 @@ from PIL import Image, ImageTk
 import random
 import pygame
 from fuzzywuzzy import fuzz
+import os
 
 # Read the CSV file
 def read_csv(filename):
@@ -199,8 +200,11 @@ def quiz_length():
         messagebox.showerror("Error", "Please enter a valid integer")
 
 pygame.init()
-correct_sound = pygame.mixer.Sound('sound/correct.wav')  # Replace 'correct.wav' with your correct answer sound file
-wrong_sound = pygame.mixer.Sound('sound/wrong.mp3')  # Replace 'wrong.wav' with your wrong answer sound file
+script_dir = os.path.dirname(os.path.abspath(__file__))
+correct_sound_path = os.path.join(script_dir, '..', 'sound', 'correct.wav')
+wrong_sound_path = os.path.join(script_dir, '..', 'sound', 'wrong.mp3')
+correct_sound = pygame.mixer.Sound(correct_sound_path)  # Replace 'correct.wav' with your correct answer sound file
+wrong_sound = pygame.mixer.Sound(wrong_sound_path)  # Replace 'wrong.wav' with your wrong answer sound file
 
 
 # Load questions and answers from CSV
