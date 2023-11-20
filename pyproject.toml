@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "geoquiz"
-version = "0.1.5"
+version = "0.1.6"
 description = "A game where you have"
 authors = ["amrutha-b-nair <amruthabn00@gmail.com>"]
 license = "MIT"
