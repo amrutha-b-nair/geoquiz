@@ -19,6 +19,14 @@ Users can input their answers, and the application will provide feedback on whet
 pipx install geoquiz
 ```
 
+## Accessing the App
+
+To access the app, open your terminal and type the following command:
+
+```bash
+geoquiz
+```
+
 ## Usage
 
 1. **Start Quiz**
