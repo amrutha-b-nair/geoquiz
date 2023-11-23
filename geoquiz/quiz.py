@@ -36,12 +36,14 @@ def start_quiz():
     wrong_label.pack_forget()
     order_label.pack_forget()
     enter_manually.pack_forget()
+    sound_button.pack_forget()
     start.pack_forget()
     result_label.place_forget()
     start_button.place_forget()
     line1.destroy()
     line2.destroy()
     line3.destroy()
+    line4.destroy()
     label_empty.pack_forget()
     score_label.pack(pady=30)
     frame1.pack(pady=10) 
@@ -84,7 +86,7 @@ def display_question():
 
 # Check the user's answer
 def check_answer():
-    global current_question, score, answer_display
+    global current_question, score
     user_answer = answer_entry.get()
     time_to_wait = 200
     if user_answer.lower() in image_answers[current_question][1]:
@@ -96,8 +98,10 @@ def check_answer():
             correct()
         else:
             submit_button.config(bg="red")
-            wrong_sound.play()
-            if answer_display:
+            if sound_var.get():
+                wrong_sound.play()
+            
+            if show_answers_var.get():
                 correct_answer_label.config(text=f"Correct Answer: {image_answers[current_question][2]}")
                 correct_answer_label.place_forget()
                 time_to_wait = 1000
@@ -118,7 +122,8 @@ def check_similarity(user_answer):
         return True
 
 def correct():
-    correct_sound.play()
+    if sound_var.get():
+        correct_sound.play()
     submit_button.config(bg="green")
     root.update()
     root.after(500, reset_button_color)
@@ -172,13 +177,6 @@ def quiz_type(k):
     select_number.config(text= "Selected number of countries:" + str(k))
     
 
-def show_answer():
-    global answer_display
-    if show_answers_var.get():
-        answer_display = True
-    else:
-        answer_display = False
-
 
 def quiz_length():
     user_input = simpledialog.askstring("Input", "Enter the number of countries in quiz:")
@@ -196,7 +194,7 @@ def create_horizontal_line():
 
 
 def settings():
-    global line1, line2, line3
+    global line1, line2, line3, line4
     result_label.place_forget()
     start_button.place_forget()
     label_empty.pack(pady=30)
@@ -215,10 +213,14 @@ def settings():
     enter_manually.pack(pady=10)
     select_number.pack()
     line3 = create_horizontal_line()
+    sound_button.pack(pady=10)
 
+    line4 = create_horizontal_line()
     start.pack(pady=10)
 
-
+def change_color(event, color):
+    all_country.config(bg=color)
+    
 
 
 pygame.init()
@@ -257,7 +259,7 @@ start_button.place(relx=0.5, rely=0.5, anchor=CENTER)
 
 show_answers_var = BooleanVar()
 wrong_label = Label(root, text="To see correct answer if you make a mistake.",font=("Ariel", 15, "italic"))
-show_correct_answer = Checkbutton(root, text="Show Answers", variable=show_answers_var,font=("Helvetica", 15), command=show_answer)
+show_correct_answer = Checkbutton(root, text="Show Answers", variable=show_answers_var,font=("Helvetica", 15))
 show_answers_var.set(True)
 
 
@@ -275,12 +277,17 @@ all_country = Button(root, text="All countries",font=("Helvetica", 15), command=
 enter_manually = Button(root, text="Enter the number of Countries",font=("Helvetica", 15), command= quiz_length)
 
 
-
+all_country.bind("<Button-1>", lambda event: change_color(event, '#c0c0c0'))
+enter_manually.bind("<Button-1>", lambda event: change_color(event, '#d9d9d9'))
 
 start = Button(root, text="Start",font=("Helvetica", 20), command=start_quiz)
-
+start.bind("<Button-1>", lambda event: change_color(event, '#d9d9d9'))
 
 finish_button = Button(frame3, text="Finish Quiz",font=("Helvetica", 15), command=finish_quiz)
+
+sound_var = BooleanVar()
+sound_button = Checkbutton(root, text="Sound", variable=sound_var,font=("Helvetica", 15))
+sound_var.set(True)
 
 
 result_label = Label(root,font=("Helvetica", 15), text="")
