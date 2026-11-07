@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>GeoQuiz – Name the Country</title>
+  <meta name="description" content="Name the country from its shape. A geography quiz with 197 countries.">
+  <meta name="theme-color" content="#0b7a3b">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main id="app">
+    <!-- Home / settings -->
+    <section id="screen-home" class="screen active" aria-labelledby="home-title">
+      <header class="hero">
+        <img src="icons/icon-192.png" alt="" width="72" height="72">
+        <h1 id="home-title">GeoQuiz</h1>
+        <p class="tagline">Name the country from its shape</p>
+      </header>
+
+      <form id="settings" class="card" novalidate>
+        <fieldset>
+          <legend>Order</legend>
+          <label class="option"><input type="radio" name="order" value="difficulty" checked> Increasing difficulty</label>
+          <label class="option"><input type="radio" name="order" value="random"> Random order</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Number of countries</legend>
+          <div class="segmented">
+            <label><input type="radio" name="count" value="10" checked><span>10</span></label>
+            <label><input type="radio" name="count" value="25"><span>25</span></label>
+            <label><input type="radio" name="count" value="all"><span>All</span></label>
+            <label><input type="radio" name="count" value="custom"><span>Custom</span></label>
+          </div>
+          <input id="custom-count" type="number" inputmode="numeric" min="1" step="1" placeholder="How many?" hidden>
+        </fieldset>
+
+        <fieldset>
+          <legend>Options</legend>
+          <label class="switch"><input type="checkbox" name="showAnswers" checked> Show correct answer after a mistake</label>
+          <label class="switch"><input type="checkbox" name="sound" checked> Sound</label>
+        </fieldset>
+
+        <button type="submit" class="btn primary big" id="start-btn" disabled>Loading…</button>
+      </form>
+    </section>
+
+    <!-- Quiz -->
+    <section id="screen-quiz" class="screen" aria-label="Quiz">
+      <div class="topbar">
+        <button type="button" class="btn ghost" id="quit-btn" aria-label="Finish quiz">✕ Finish</button>
+        <div class="progress-wrap" aria-hidden="true"><div class="progress" id="progress"></div></div>
+        <div class="score" id="score" aria-live="polite">0 / 0</div>
+      </div>
+
+      <div class="question-count" id="question-count"></div>
+
+      <figure class="shape" id="shape-wrap">
+        <img id="shape" alt="Silhouette of the country to guess">
+      </figure>
+
+      <p class="feedback" id="feedback" aria-live="assertive"></p>
+
+      <form id="answer-form" class="answer" autocomplete="off">
+        <input id="answer" type="text" placeholder="Type the country name" aria-label="Your answer"
+               autocapitalize="words" autocorrect="off" spellcheck="false" enterkeyhint="go">
+        <button type="submit" class="btn primary" id="submit-btn">Submit</button>
+      </form>
+      <button type="button" class="btn ghost" id="skip-btn">Skip</button>
+    </section>
+
+    <!-- Results -->
+    <section id="screen-results" class="screen" aria-labelledby="results-title">
+      <div class="card results">
+        <h2 id="results-title">Your score</h2>
+        <p class="big-score" id="final-score"></p>
+        <p id="final-message"></p>
+        <div class="actions">
+          <button type="button" class="btn primary big" id="again-btn">Play again</button>
+          <button type="button" class="btn" id="home-btn">Change settings</button>
+        </div>
+      </div>
+      <div class="card" id="missed-wrap" hidden>
+        <h3>Countries to review</h3>
+        <ul class="missed" id="missed"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="credits">
+    Shapes from <a href="https://geojson-maps.ash.ms/">geojson-maps</a>, <a href="https://www.geoboundaries.org/">geoBoundaries</a>
+    · Sounds from <a href="https://freesound.org/">freesound.org</a>
+    · <a href="https://github.com/amrutha-b-nair/geoquiz">Source</a>
+  </footer>
+
+  <script src="js/match.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

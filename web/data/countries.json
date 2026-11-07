@@ -1,0 +1,2564 @@
+[
+ {
+  "id": "united-states",
+  "name": "United States",
+  "aliases": [
+   "United States",
+   "United States of America",
+   "America",
+   "the States",
+   "US",
+   "U.S.",
+   "USA",
+   "U.S.A.",
+   "U.S.A",
+   "Columbia",
+   "Usonia"
+  ],
+  "image": "img/countries/united-states.webp"
+ },
+ {
+  "id": "people-s-republic-of-china",
+  "name": "China",
+  "aliases": [
+   "People's Republic of China",
+   "China",
+   "PRC",
+   "Communist China",
+   "Red China",
+   "the ROC a",
+   "the the PRC the of the Chinese",
+   "Ch'in Empire",
+   "Cathay",
+   "Zhongguo the China Chinese"
+  ],
+  "image": "img/countries/people-s-republic-of-china.webp"
+ },
+ {
+  "id": "russia",
+  "name": "Russia",
+  "aliases": [
+   "Russia",
+   "Russian Federation",
+   "Russland",
+   "RF",
+   "Russian Empire",
+   "Russian Socialist Federative Soviet Republic",
+   "Russian Soviet Federative Socialist Republic",
+   "RSFSR",
+   "Soviet Union",
+   "Union of Soviet Socialist Republics",
+   "USSR",
+   "Soyuz Sovetskikh Sotsialisticheskikh Respublik",
+   "SSSR",
+   "SU",
+   "Sovetskiy Soyuz",
+   "Rus",
+   "Great Russia"
+  ],
+  "image": "img/countries/russia.webp"
+ },
+ {
+  "id": "canada",
+  "name": "Canada",
+  "aliases": [
+   "Canada",
+   "Dominion of Canada",
+   "Dominion du Canada",
+   "Acadia"
+  ],
+  "image": "img/countries/canada.webp"
+ },
+ {
+  "id": "brazil",
+  "name": "Brazil",
+  "aliases": [
+   "Brazil",
+   "Federative Republic of Brazil",
+   "Pindorama",
+   "Terra de Santa Cruz Portuguese",
+   "Ilha de Vera Cruz",
+   "Empire of Brazil",
+   "United States of Brazil",
+   "Repblica Federativa do Brasil"
+  ],
+  "image": "img/countries/brazil.webp"
+ },
+ {
+  "id": "australia",
+  "name": "Australia",
+  "aliases": [
+   "Australia",
+   "Commonwealth of Australia",
+   "New Holland"
+  ],
+  "image": "img/countries/australia.webp"
+ },
+ {
+  "id": "india",
+  "name": "India",
+  "aliases": [
+   "India",
+   "Republic of India",
+   "Bhrat Bhratam",
+   "Bhrat Gaarjya",
+   "Bhrata",
+   "Bhratada",
+   "Bhratam",
+   "Union of India",
+   "Hindustan",
+   "Bhratavara",
+   "Bhrat Prajatantra",
+   "Hodu",
+   "Aryavarta",
+   "Jumhryat-e Bhrat"
+  ],
+  "image": "img/countries/india.webp"
+ },
+ {
+  "id": "mexico",
+  "name": "Mexico",
+  "aliases": [
+   "Mexico",
+   "United Mexican States",
+   "Estados Unidos Mexicanos",
+   "Mxico",
+   "Repblica Mexicana",
+   "Mjico",
+   "MEX",
+   "MX",
+   "Aztln"
+  ],
+  "image": "img/countries/mexico.webp"
+ },
+ {
+  "id": "indonesia",
+  "name": "Indonesia",
+  "aliases": [
+   "Indonesia",
+   "Republic of Indonesia",
+   "Republik Indonesia",
+   "Negara Kesatuan Republik Indonesia",
+   "Nusantara",
+   "Insulinde the",
+   "Indunesia Dutch East",
+   "Indonesi",
+   "Dutch East Indies or Netherlands East-Indies",
+   "Nederlandsch-Indi",
+   "Hindia Belanda"
+  ],
+  "image": "img/countries/indonesia.webp"
+ },
+ {
+  "id": "france",
+  "name": "France",
+  "aliases": [
+   "France",
+   "French Republic",
+   "Rpublique Franaise",
+   "L'Hexagone",
+   "Gaul",
+   "Gaule",
+   "Frankreich",
+   "Francia",
+   "Farana",
+   "Tsarfat"
+  ],
+  "image": "img/countries/france.webp"
+ },
+ {
+  "id": "japan",
+  "name": "Japan",
+  "aliases": [
+   "Japan",
+   "Nippon"
+  ],
+  "image": "img/countries/japan.webp"
+ },
+ {
+  "id": "saudi-arabia",
+  "name": "Saudi Arabia",
+  "aliases": [
+   "Saudi Arabia",
+   "Kingdom of Saudi Arabia",
+   "KSA",
+   "Saudia",
+   "Al-Mamlaka al-Arabiyya as-Saudiyya",
+   "Nejd",
+   "Najd",
+   "Hijaz",
+   "Saudi regime",
+   "Arav haSa'udit"
+  ],
+  "image": "img/countries/saudi-arabia.webp"
+ },
+ {
+  "id": "germany",
+  "name": "Germany",
+  "aliases": [
+   "Germany",
+   "Federal Republic of Germany",
+   "Bundesrepublik Deutschland",
+   "Deutschland",
+   "BRD",
+   "FRG the",
+   "the names West Germany",
+   "German the",
+   "German Empire",
+   "Weimar Republic",
+   "Duitsland",
+   "Allemagne",
+   "Alemania",
+   "Germania",
+   "Nmecko",
+   "Niemcy",
+   "Nmetorszg",
+   "Germany a of the Alemannia and a of Nemacia",
+   "names Bavaria or the former Prussia Germany",
+   "Saksa",
+   "the East Germany",
+   "Deutsche Demokratische Republik",
+   "German Democratic Republic",
+   "DDR",
+   "GDR"
+  ],
+  "image": "img/countries/germany.webp"
+ },
+ {
+  "id": "argentina",
+  "name": "Argentina",
+  "aliases": [
+   "Argentina",
+   "Argentine Republic",
+   "la Argentina",
+   "the Argentine",
+   "Argentine Nation",
+   "United Provinces of the Ro de la Plata",
+   "Argentine Confederation"
+  ],
+  "image": "img/countries/argentina.webp"
+ },
+ {
+  "id": "iran",
+  "name": "Iran",
+  "aliases": [
+   "Iran",
+   "Islamic Republic of Iran",
+   "Persia Iran",
+   "the of the the west",
+   "the of Iran the",
+   "IRI",
+   "I.R.I.",
+   "I.R.I"
+  ],
+  "image": "img/countries/iran.webp"
+ },
+ {
+  "id": "united-kingdom",
+  "name": "United Kingdom",
+  "aliases": [
+   "United Kingdom",
+   "United Kingdom of Great Britain and Northern Ireland",
+   "Britain",
+   "Great Britain",
+   "U.K. or UK",
+   "Albion",
+   "Britannia",
+   "Anglia",
+   "Alba",
+   "Scotia",
+   "Caledonia",
+   "Cymru",
+   "Cambria",
+   "Northern Ulster"
+  ],
+  "image": "img/countries/united-kingdom.webp"
+ },
+ {
+  "id": "spain",
+  "name": "Spain",
+  "aliases": [
+   "Spain",
+   "Kingdom of Spain",
+   "Espaa",
+   "Reino de Espaa",
+   "Espanya",
+   "Hispania",
+   "Espainia",
+   "Spanish State",
+   "La piel de toro La pell de brau",
+   "the of the",
+   "Las Batuecas the of de",
+   "Iberia the",
+   "Sepharad"
+  ],
+  "image": "img/countries/spain.webp"
+ },
+ {
+  "id": "turkey",
+  "name": "Turkey",
+  "aliases": [
+   "Turkey",
+   "Republic of Trkiye",
+   "Trkiye Cumhuriyeti",
+   "Asia Minor",
+   "Anatolia",
+   "Ottoman Empire",
+   "Turkish Empire"
+  ],
+  "image": "img/countries/turkey.webp"
+ },
+ {
+  "id": "italy",
+  "name": "Italy",
+  "aliases": [
+   "Italy",
+   "Italian Republic",
+   "Repubblica Italiana Italian",
+   "Italia",
+   "Kingdom of Italy",
+   "the Beautiful Country",
+   "the Boot",
+   "Ausonia",
+   "Esperia",
+   "Enotria",
+   "Tirrenia"
+  ],
+  "image": "img/countries/italy.webp"
+ },
+ {
+  "id": "kazakhstan",
+  "name": "Kazakhstan",
+  "aliases": [
+   "Kazakhstan",
+   "Republic of Kazakhstan",
+   "Kazakh",
+   "Qazaqstan",
+   "Alash  Ala",
+   "Kazakh Soviet Socialist Republic Soviet",
+   "Keestik Socalstik Respwblkas Soviet",
+   "Kazakhskaya Sovetskaya Sotsialisticheskaya Respublika Soviet"
+  ],
+  "image": "img/countries/kazakhstan.webp"
+ },
+ {
+  "id": "south-africa",
+  "name": "South Africa",
+  "aliases": [
+   "South Africa",
+   "Republic of South Africa",
+   "Azania",
+   "Mzansi",
+   "Suid-Afrika",
+   "Zuid-Afrika",
+   "Union of South Africa"
+  ],
+  "image": "img/countries/south-africa.webp"
+ },
+ {
+  "id": "egypt",
+  "name": "Egypt",
+  "aliases": [
+   "Egypt",
+   "Arab Republic of Egypt",
+   "Mir",
+   "Mer",
+   "Aegyptus",
+   "Kmi"
+  ],
+  "image": "img/countries/egypt.webp"
+ },
+ {
+  "id": "nigeria",
+  "name": "Nigeria",
+  "aliases": [
+   "Nigeria",
+   "Federal Republic of Nigeria",
+   "Orl-d Olmniira pap Njr",
+   "Jamhuriyar Taraiyar Najeriya",
+   "hjk hnz Najry"
+  ],
+  "image": "img/countries/nigeria.webp"
+ },
+ {
+  "id": "algeria",
+  "name": "Algeria",
+  "aliases": [
+   "Algeria",
+   "People's Democratic Republic of Algeria",
+   "al-Jazir",
+   "al-Jumhriyya al-Jaziriyya ad-Dmuqriyya aabiyya",
+   "Rpublique algrienne dmocratique et populaire"
+  ],
+  "image": "img/countries/algeria.webp"
+ },
+ {
+  "id": "colombia",
+  "name": "Colombia",
+  "aliases": [
+   "Colombia",
+   "Republic of Colombia",
+   "Repblica de Colombia",
+   "Estados Unidos de Colombia",
+   "Confederacin Granadina",
+   "Repblica de la Nueva Granada"
+  ],
+  "image": "img/countries/colombia.webp"
+ },
+ {
+  "id": "pakistan",
+  "name": "Pakistan",
+  "aliases": [
+   "Pakistan",
+   "Islamic Republic of Pakistan",
+   "Federation of Pakistan",
+   "Dominion of Pakistan",
+   "West Pakistan and the Pakistan",
+   "the the of",
+   "Sindhustan and Indoscythia",
+   "Mumlikat-e Khudadaad Pakistan of"
+  ],
+  "image": "img/countries/pakistan.webp"
+ },
+ {
+  "id": "peru",
+  "name": "Peru",
+  "aliases": [
+   "Peru",
+   "Republic of Peru",
+   "Repblica del Per",
+   "Per",
+   "Peruvian Republic",
+   "Repblica Peruana"
+  ],
+  "image": "img/countries/peru.webp"
+ },
+ {
+  "id": "sweden",
+  "name": "Sweden",
+  "aliases": [
+   "Sweden",
+   "Kingdom of Sweden",
+   "Sverige",
+   "Konungariket Sverige",
+   "Svea Rike",
+   "Thule",
+   "Svitjod"
+  ],
+  "image": "img/countries/sweden.webp"
+ },
+ {
+  "id": "thailand",
+  "name": "Thailand",
+  "aliases": [
+   "Thailand",
+   "Kingdom of Thailand",
+   "Siam"
+  ],
+  "image": "img/countries/thailand.webp"
+ },
+ {
+  "id": "chile",
+  "name": "Chile",
+  "aliases": [
+   "Chile",
+   "Republic of Chile",
+   "Chilli",
+   "Chili",
+   "Reyno de Chile",
+   "Capitania general de Chile"
+  ],
+  "image": "img/countries/chile.webp"
+ },
+ {
+  "id": "poland",
+  "name": "Poland",
+  "aliases": [
+   "Poland",
+   "Republic of Poland",
+   "Rzeczpospolita Polska",
+   "Polska",
+   "RP",
+   "People's Republic of Poland Communist",
+   "Polska Rzeczpospolita Ludowa Communist",
+   "Rzeczpospolita",
+   "PolishLithuanian Commonwealth",
+   "Rzeczpospolita Obojga Narodw",
+   "United Commonwealth of the Two Nations",
+   "Polonia",
+   "Lechia"
+  ],
+  "image": "img/countries/poland.webp"
+ },
+ {
+  "id": "norway",
+  "name": "Norway",
+  "aliases": [
+   "Norway",
+   "Kingdom of Norway",
+   "Norge",
+   "Noreg",
+   "Kongeriket Norge",
+   "Kongeriket Noreg"
+  ],
+  "image": "img/countries/norway.webp"
+ },
+ {
+  "id": "south-korea",
+  "name": "South Korea",
+  "aliases": [
+   "South Korea",
+   "Republic of Korea",
+   "R.O.K.",
+   "ROK",
+   "Dae-han-min-guk",
+   "Han-guk",
+   "Korea",
+   "Korea Republic"
+  ],
+  "image": "img/countries/south-korea.webp"
+ },
+ {
+  "id": "democratic-republic-of-congo",
+  "name": "Democratic Republic of Congo",
+  "aliases": [
+   "Democratic Republic of Congo",
+   "Democratic Republic of the Congo",
+   "Zaire",
+   "Republic of the",
+   "DRC",
+   "Congo Kinshasa",
+   "Belgian Congo Belgian",
+   "Congo belge",
+   "Congo Free State",
+   "Republic of the Congo"
+  ],
+  "image": "img/countries/democratic-republic-of-congo.webp"
+ },
+ {
+  "id": "malaysia",
+  "name": "Malaysia",
+  "aliases": [
+   "Malaysia",
+   "Persekutuan Malaysia",
+   "Federation of Malaysia",
+   "Malaya",
+   "Sabah and Sarawak",
+   "names of the",
+   "Tanah Melayu or Land",
+   "Mlixy",
+   "Malciya"
+  ],
+  "image": "img/countries/malaysia.webp"
+ },
+ {
+  "id": "vietnam",
+  "name": "Vietnam",
+  "aliases": [
+   "Vietnam",
+   "Socialist Republic of Vietnam",
+   "An Nam",
+   "Champa",
+   "i Vit",
+   "Giao Ch Chinese",
+   "French Indochina French and Cambodia",
+   "Lnh Nam",
+   "North Vietnam Republic of and South Vietnam Republic of",
+   "Cng ha X hi Ch ngha Vit Nam",
+   "Vit Nam",
+   "SRV",
+   "S.R.V.",
+   "VN",
+   "V.N."
+  ],
+  "image": "img/countries/vietnam.webp"
+ },
+ {
+  "id": "ukraine",
+  "name": "Ukraine",
+  "aliases": [
+   "Ukraine",
+   "UA",
+   "UKR.",
+   "Kievan Rus East the the",
+   "Kingdom of GaliciaVolhynia or Kingdom of Ruthenia of",
+   "Zaporizhian Host the on the of Ukraine and"
+  ],
+  "image": "img/countries/ukraine.webp"
+ },
+ {
+  "id": "philippines",
+  "name": "Philippines",
+  "aliases": [
+   "Philippines",
+   "Republic of the Philippines",
+   "Republika ng Pilipinas",
+   "Pilipinas",
+   "Spanish",
+   "Filipinas Spanish",
+   "Las Islas Filipinas of Spain",
+   "a of the",
+   "Las Islas Felipenas",
+   "de",
+   "Pins",
+   "PH",
+   "RP",
+   "Philippine Islands P.I.",
+   "Filipina",
+   "Harng Bayang Katagalugan",
+   "Islas de San Lzaro of Saint"
+  ],
+  "image": "img/countries/philippines.webp"
+ },
+ {
+  "id": "ethiopia",
+  "name": "Ethiopia",
+  "aliases": [
+   "Ethiopia",
+   "Federal Democratic Republic of Ethiopia",
+   "Abyssinia",
+   "Etiopia",
+   "Habeistan",
+   "Ethiopi",
+   "Al-Habasha"
+  ],
+  "image": "img/countries/ethiopia.webp"
+ },
+ {
+  "id": "venezuela",
+  "name": "Venezuela",
+  "aliases": [
+   "Venezuela",
+   "Bolivarian Republic of Venezuela",
+   "Repblica Bolivariana de Venezuela",
+   "Estado de Venezuela",
+   "Repblica de Venezuela",
+   "Estados Unidos de Venezuela",
+   "and Repblica de Venezuela"
+  ],
+  "image": "img/countries/venezuela.webp"
+ },
+ {
+  "id": "finland",
+  "name": "Finland",
+  "aliases": [
+   "Finland",
+   "Republic of Finland",
+   "Suomi",
+   "Suomen tasavalta",
+   "Republiken Finland",
+   "Suomenmaa",
+   "Suopma and Suoma dssevldi",
+   "Lddjnnam and Lddjnnam tssvldd",
+   "Suom and Suom tsivldi",
+   "Grand Duchy of",
+   "Soome"
+  ],
+  "image": "img/countries/finland.webp"
+ },
+ {
+  "id": "iraq",
+  "name": "Iraq",
+  "aliases": [
+   "Iraq",
+   "Republic of Iraq",
+   "Mesopotamia",
+   "Assyria",
+   "Babylon"
+  ],
+  "image": "img/countries/iraq.webp"
+ },
+ {
+  "id": "angola",
+  "name": "Angola",
+  "aliases": [
+   "Angola",
+   "Republic of Angola",
+   "Repblica de Angola"
+  ],
+  "image": "img/countries/angola.webp"
+ },
+ {
+  "id": "libya",
+  "name": "Libya",
+  "aliases": [
+   "Libya",
+   "State of Libya",
+   "Dawlat Lbiy",
+   "United Libyan Kingdom",
+   "Kingdom of Libya",
+   "Libyan Arab Republic",
+   "Socialist People's Libyan Arab Jamahiriya",
+   "Great Socialist People's Libyan Arab Jamahiriya"
+  ],
+  "image": "img/countries/libya.webp"
+ },
+ {
+  "id": "new-zealand",
+  "name": "New Zealand",
+  "aliases": [
+   "New Zealand",
+   "Aotearoa",
+   "Realm of New Zealand Islands",
+   "Dominion of New Zealand"
+  ],
+  "image": "img/countries/new-zealand.webp"
+ },
+ {
+  "id": "romania",
+  "name": "Romania",
+  "aliases": [
+   "Romania",
+   "Romnia",
+   "Rumania or Roumania",
+   "Kingdom of Romania",
+   "Regatul Romniei",
+   "Romanian People's Republic Communist",
+   "Republica Popular Romn Communist",
+   "Socialist Republic of Romania Communist",
+   "Republica Socialist Romnia Communist"
+  ],
+  "image": "img/countries/romania.webp"
+ },
+ {
+  "id": "sudan",
+  "name": "Sudan",
+  "aliases": [
+   "Sudan",
+   "Republic of the Sudan",
+   "The Sudan",
+   "Anglo-Egyptian Sudan",
+   "Mahdist State",
+   "Nubia"
+  ],
+  "image": "img/countries/sudan.webp"
+ },
+ {
+  "id": "tanzania",
+  "name": "Tanzania",
+  "aliases": [
+   "Tanzania",
+   "United Republic of Tanzania",
+   "United Republic of Tanganyika and Zanzibar",
+   "Deutsch-Ostafrika",
+   "Ruanda and German East Africa",
+   "The Tanganyika",
+   "and the Zanzibar"
+  ],
+  "image": "img/countries/tanzania.webp"
+ },
+ {
+  "id": "kenya",
+  "name": "Kenya",
+  "aliases": [
+   "Kenya",
+   "Republic of Kenya",
+   "Jamhuri ya Kenya",
+   "British East Africa Protectorate a the",
+   "Kenya Colony British"
+  ],
+  "image": "img/countries/kenya.webp"
+ },
+ {
+  "id": "morocco",
+  "name": "Morocco",
+  "aliases": [
+   "Morocco",
+   "Kingdom of Morocco",
+   "Al Mamlaka Al Maghribiya",
+   "The Far west kingdom",
+   "Maghreb Country"
+  ],
+  "image": "img/countries/morocco.webp"
+ },
+ {
+  "id": "bangladesh",
+  "name": "Bangladesh",
+  "aliases": [
+   "Bangladesh",
+   "People's Republic of Bangladesh",
+   "Gnprjatntri Bangladesh",
+   "Bngg",
+   "Bengal",
+   "Bengal Presidency",
+   "East Bengal",
+   "Pakistan",
+   "East Pakistan"
+  ],
+  "image": "img/countries/bangladesh.webp"
+ },
+ {
+  "id": "bolivia",
+  "name": "Bolivia",
+  "aliases": [
+   "Bolivia",
+   "Plurinational State of Bolivia",
+   "Estado Plurinacional de Bolivia",
+   "Republic of Bolvar",
+   "Republic of Bolivia"
+  ],
+  "image": "img/countries/bolivia.webp"
+ },
+ {
+  "id": "netherlands",
+  "name": "Netherlands",
+  "aliases": [
+   "Netherlands",
+   "Kingdom of the Netherlands",
+   "Koninkrijk der Nederlanden",
+   "Nederland",
+   "Holland",
+   "Dutch",
+   "Batavia",
+   "Pays-Bas",
+   "names the of the"
+  ],
+  "image": "img/countries/netherlands.webp"
+ },
+ {
+  "id": "austria",
+  "name": "Austria",
+  "aliases": [
+   "Austria",
+   "Republic of Austria",
+   "Republik sterreich",
+   "sterreich",
+   "Federal Republic of Austria"
+  ],
+  "image": "img/countries/austria.webp"
+ },
+ {
+  "id": "myanmar",
+  "name": "Myanmar",
+  "aliases": [
+   "Myanmar",
+   "Republic of the Union of Myanmar",
+   "Burma",
+   "Pyidaunzu Thanmda Myma Nainngandaw"
+  ],
+  "image": "img/countries/myanmar.webp"
+ },
+ {
+  "id": "ireland",
+  "name": "Ireland",
+  "aliases": [
+   "Ireland",
+   "ire Irish",
+   "Irish Free State",
+   "Poblacht na hireann Irish",
+   "Republic of Ireland",
+   "Saorstt ireann",
+   "Erin",
+   "Banba",
+   "Fodla",
+   "Hibernia"
+  ],
+  "image": "img/countries/ireland.webp"
+ },
+ {
+  "id": "united-arab-emirates",
+  "name": "United Arab Emirates",
+  "aliases": [
+   "United Arab Emirates",
+   "Trucial States",
+   "Al Emirat al Arabbiya al Muttahida",
+   "UAE",
+   "U.A.E.",
+   "Trucial Arabia",
+   "The Emirates"
+  ],
+  "image": "img/countries/united-arab-emirates.webp"
+ },
+ {
+  "id": "switzerland",
+  "name": "Switzerland",
+  "aliases": [
+   "Switzerland",
+   "Schweiz",
+   "Schweizerische Eidgenossenschaft",
+   "Suisse",
+   "Confdration suisse",
+   "Svizzera",
+   "Confederazione Svizzera",
+   "Svizra",
+   "Confederaziun Svizra",
+   "Confoederatio Helvetica",
+   "Helvetia",
+   "CH"
+  ],
+  "image": "img/countries/switzerland.webp"
+ },
+ {
+  "id": "uzbekistan",
+  "name": "Uzbekistan",
+  "aliases": [
+   "Uzbekistan",
+   "Republic of Uzbekistan",
+   "Ozbekiston",
+   "Ozbekiston Respublikasi"
+  ],
+  "image": "img/countries/uzbekistan.webp"
+ },
+ {
+  "id": "ecuador",
+  "name": "Ecuador",
+  "aliases": [
+   "Ecuador",
+   "Republic of Ecuador",
+   "Repblica del Ecuador",
+   "Ikwadur Ripuwlika",
+   "Ekuatur Nunka"
+  ],
+  "image": "img/countries/ecuador.webp"
+ },
+ {
+  "id": "taiwan",
+  "name": "Taiwan",
+  "aliases": [
+   "Taiwan",
+   "Republic of",
+   "ROC",
+   "Chinese",
+   "Separate Customs Territory of Taiwan",
+   "Kinmen",
+   "Taipei",
+   "China China Taiwan of",
+   "Province of China",
+   "Governing authorities on Taiwan the Taiwan",
+   "Nationalist China",
+   "Free China",
+   "Formosa"
+  ],
+  "image": "img/countries/taiwan.webp"
+ },
+ {
+  "id": "greece",
+  "name": "Greece",
+  "aliases": [
+   "Greece",
+   "Hellenic Republic",
+   "Hellas",
+   "Yunanistan",
+   "Kingdom of the Hellenes",
+   "Yavan"
+  ],
+  "image": "img/countries/greece.webp"
+ },
+ {
+  "id": "oman",
+  "name": "Oman",
+  "aliases": [
+   "Oman",
+   "Sultanate of Oman"
+  ],
+  "image": "img/countries/oman.webp"
+ },
+ {
+  "id": "turkmenistan",
+  "name": "Turkmenistan",
+  "aliases": [
+   "Turkmenistan",
+   "Trkmenistan",
+   "Turkmenia"
+  ],
+  "image": "img/countries/turkmenistan.webp"
+ },
+ {
+  "id": "mali",
+  "name": "Mali",
+  "aliases": [
+   "Mali",
+   "Republic of Mali",
+   "Rpublique du Mali"
+  ],
+  "image": "img/countries/mali.webp"
+ },
+ {
+  "id": "mongolia",
+  "name": "Mongolia",
+  "aliases": [
+   "Mongolia",
+   "Mongol Uls"
+  ],
+  "image": "img/countries/mongolia.webp"
+ },
+ {
+  "id": "portugal",
+  "name": "Portugal",
+  "aliases": [
+   "Portugal",
+   "Portuguese Republic",
+   "Lusitania",
+   "Galaico-Portuguese and Portucale the and and Galician-Portuguese the Ophiussa Ophiusa of the Portuguese Land of Portugalensis patrie",
+   "Portugalensium patrie and Portugaliae",
+   "Regno Portugalensium and Portugalis",
+   "Portugalliae et Algarbiae",
+   "Portugalliae",
+   "Lusitaniae Purtugall Burtughl the and and Portingall or Portingal and Ocidental Praia Lusitana and Ptria Lusitana the and and of the and Luxitania and Portugraal of"
+  ],
+  "image": "img/countries/portugal.webp"
+ },
+ {
+  "id": "cote-d-ivoire",
+  "name": "Côte d'Ivoire",
+  "aliases": [
+   "Côte d'Ivoire",
+   "Republic of Cte d'Ivoire",
+   "Ivory Coast",
+   "the Ivory Coast",
+   "Rpublique de Cte d'Ivoire"
+  ],
+  "image": "img/countries/cote-d-ivoire.webp"
+ },
+ {
+  "id": "czech-republic",
+  "name": "Czech Republic",
+  "aliases": [
+   "Czech Republic",
+   "Czechia",
+   "esk republika",
+   "Czech",
+   "esko",
+   "CR",
+   "Bohemia",
+   "Czechland",
+   "the Czechlands",
+   "esk zem or esk socialistick republika the Socialist",
+   "SR",
+   "CSR",
+   "Protektort echy a Morava the of Bohemia",
+   "Zem Koruny esk the of the",
+   "Koruna esk the",
+   "esk konfederace the"
+  ],
+  "image": "img/countries/czech-republic.webp"
+ },
+ {
+  "id": "cameroon",
+  "name": "Cameroon",
+  "aliases": [
+   "Cameroon",
+   "Republic of Cameroon",
+   "United Republic of Cameroon",
+   "Kamerun"
+  ],
+  "image": "img/countries/cameroon.webp"
+ },
+ {
+  "id": "chad",
+  "name": "Chad",
+  "aliases": [
+   "Chad",
+   "Republic of Chad",
+   "Rpublique du Tchad",
+   "Jumhryat Tashd"
+  ],
+  "image": "img/countries/chad.webp"
+ },
+ {
+  "id": "niger",
+  "name": "Niger",
+  "aliases": [
+   "Niger",
+   "Republic of the Niger",
+   "The Niger",
+   "Rpublique du Niger"
+  ],
+  "image": "img/countries/niger.webp"
+ },
+ {
+  "id": "ghana",
+  "name": "Ghana",
+  "aliases": [
+   "Ghana",
+   "Republic of Ghana",
+   "Gold Coast",
+   "United Gold Coast Convention",
+   "Ghana Tizuu",
+   "Gaana"
+  ],
+  "image": "img/countries/ghana.webp"
+ },
+ {
+  "id": "belgium",
+  "name": "Belgium",
+  "aliases": [
+   "Belgium",
+   "Kingdom of Belgium",
+   "Koninkrijk Belgi",
+   "Royaume de Belgique",
+   "Knigreich Belgien",
+   "Belgique",
+   "Belgi",
+   "Belgien"
+  ],
+  "image": "img/countries/belgium.webp"
+ },
+ {
+  "id": "denmark",
+  "name": "Denmark",
+  "aliases": [
+   "Denmark",
+   "Kingdom of Denmark",
+   "Danmark",
+   "Kongeriget Danmark",
+   "Dania"
+  ],
+  "image": "img/countries/denmark.webp"
+ },
+ {
+  "id": "hungary",
+  "name": "Hungary",
+  "aliases": [
+   "Hungary",
+   "Republic of Hungary",
+   "Hungarian People's Republic",
+   "Kingdom of Hungary",
+   "Regnum Hungari",
+   "the language of",
+   "Hungaria",
+   "Magyarorszg Hungarian the of the",
+   "Magyar Kztrsasg of",
+   "Magyar Npkztrsasg Republic of",
+   "Magyar Tancskztrsasg of the People's",
+   "Magyar Kirlysg of",
+   "Pannonia",
+   "Macaristan"
+  ],
+  "image": "img/countries/hungary.webp"
+ },
+ {
+  "id": "paraguay",
+  "name": "Paraguay",
+  "aliases": [
+   "Paraguay",
+   "Republic of Paraguay",
+   "Repblica del Paraguay",
+   "Tet Paragui"
+  ],
+  "image": "img/countries/paraguay.webp"
+ },
+ {
+  "id": "zambia",
+  "name": "Zambia",
+  "aliases": [
+   "Zambia",
+   "Republic of Zambia",
+   "Northern Rhodesia"
+  ],
+  "image": "img/countries/zambia.webp"
+ },
+ {
+  "id": "belarus",
+  "name": "Belarus",
+  "aliases": [
+   "Belarus",
+   "Republic of Belarus",
+   "Respublika Bielaru",
+   "Byelorussia",
+   "White Russia"
+  ],
+  "image": "img/countries/belarus.webp"
+ },
+ {
+  "id": "cuba",
+  "name": "Cuba",
+  "aliases": [
+   "Cuba",
+   "Republic of Cuba",
+   "Repblica de Cuba"
+  ],
+  "image": "img/countries/cuba.webp"
+ },
+ {
+  "id": "mozambique",
+  "name": "Mozambique",
+  "aliases": [
+   "Mozambique",
+   "Republic of Mozambique",
+   "Moambique or Repblica de Moambique",
+   "Mozambiki",
+   "Msumbiji",
+   "Muzambhiki"
+  ],
+  "image": "img/countries/mozambique.webp"
+ },
+ {
+  "id": "papua-new-guinea",
+  "name": "Papua New Guinea",
+  "aliases": [
+   "Papua New Guinea",
+   "Independent State of Papua New Guinea",
+   "Independen Stet bilong Papua Niugini",
+   "Independen Stet bilong Papua Niu Gini",
+   "Papua Niugini",
+   "Papua Niu Gini"
+  ],
+  "image": "img/countries/papua-new-guinea.webp"
+ },
+ {
+  "id": "uruguay",
+  "name": "Uruguay",
+  "aliases": [
+   "Uruguay",
+   "Oriental Republic of Uruguay",
+   "Repblica Oriental del Uruguay",
+   "Repblica Oriental do Uruguai"
+  ],
+  "image": "img/countries/uruguay.webp"
+ },
+ {
+  "id": "uganda",
+  "name": "Uganda",
+  "aliases": [
+   "Uganda",
+   "Republic of Uganda",
+   "Jamhuri ya Uganda"
+  ],
+  "image": "img/countries/uganda.webp"
+ },
+ {
+  "id": "mauritania",
+  "name": "Mauritania",
+  "aliases": [
+   "Mauritania",
+   "Islamic Republic of Mauritania",
+   "Rpublique Islamique de Mauritanie"
+  ],
+  "image": "img/countries/mauritania.webp"
+ },
+ {
+  "id": "botswana",
+  "name": "Botswana",
+  "aliases": [
+   "Botswana",
+   "Republic of Botswana",
+   "Bechuanaland"
+  ],
+  "image": "img/countries/botswana.webp"
+ },
+ {
+  "id": "namibia",
+  "name": "Namibia",
+  "aliases": [
+   "Namibia",
+   "Republic of Namibia",
+   "German South-West Africa",
+   "Deutsch-Sdwestafrika"
+  ],
+  "image": "img/countries/namibia.webp"
+ },
+ {
+  "id": "israel",
+  "name": "Israel",
+  "aliases": [
+   "Israel",
+   "State of Israel",
+   "Zion Jewish",
+   "the Jewish State",
+   "the Holy Land Eretz Yisrael",
+   "the entity",
+   "Jeshurun"
+  ],
+  "image": "img/countries/israel.webp"
+ },
+ {
+  "id": "afghanistan",
+  "name": "Afghanistan",
+  "aliases": [
+   "Afghanistan",
+   "Islamic Republic of Afghanistan",
+   "Da Afnistn Islm Jumhoryat",
+   "Jumhr-yi islm-yi Afnistn",
+   "Islamic Emirate of Afghanistan",
+   "Da Afnistn Islm Amrt",
+   "imrt-i islm-yi Afnistn"
+  ],
+  "image": "img/countries/afghanistan.webp"
+ },
+ {
+  "id": "zimbabwe",
+  "name": "Zimbabwe",
+  "aliases": [
+   "Zimbabwe",
+   "Republic of Zimbabwe",
+   "Rhodesia or Republic of Rhodesia names",
+   "Southern Rhodesia"
+  ],
+  "image": "img/countries/zimbabwe.webp"
+ },
+ {
+  "id": "guatemala",
+  "name": "Guatemala",
+  "aliases": [
+   "Guatemala",
+   "Republic of Guatemala",
+   "Repblica de Guatemala"
+  ],
+  "image": "img/countries/guatemala.webp"
+ },
+ {
+  "id": "bulgaria",
+  "name": "Bulgaria",
+  "aliases": [
+   "Bulgaria",
+   "Republic of Bulgaria",
+   "Republika Blgariya",
+   "People's Republic of Bulgaria",
+   "Bulgaristan"
+  ],
+  "image": "img/countries/bulgaria.webp"
+ },
+ {
+  "id": "madagascar",
+  "name": "Madagascar",
+  "aliases": [
+   "Madagascar",
+   "Republic of Madagascar",
+   "Madagasikara",
+   "Repoblikan'i Madagasikara",
+   "Rpublique de Madagascar"
+  ],
+  "image": "img/countries/madagascar.webp"
+ },
+ {
+  "id": "tunisia",
+  "name": "Tunisia",
+  "aliases": [
+   "Tunisia",
+   "Republic of Tunisia"
+  ],
+  "image": "img/countries/tunisia.webp"
+ },
+ {
+  "id": "slovakia",
+  "name": "Slovakia",
+  "aliases": [
+   "Slovakia",
+   "Slovak Republic",
+   "Slovensko",
+   "Slovensk republika",
+   "SR and Slovak",
+   "Slovak Socialist Republic",
+   "Slovensk socialistick republika",
+   "SSR and Slovak",
+   "Slovak State",
+   "Slovensk tt"
+  ],
+  "image": "img/countries/slovakia.webp"
+ },
+ {
+  "id": "sri-lanka",
+  "name": "Sri Lanka",
+  "aliases": [
+   "Sri Lanka",
+   "Democratic Socialist Republic of Sri Lanka",
+   "Ceylon",
+   "Heladiva of",
+   "am",
+   "Ratnadeepa of",
+   "of the names of Sri"
+  ],
+  "image": "img/countries/sri-lanka.webp"
+ },
+ {
+  "id": "serbia",
+  "name": "Serbia",
+  "aliases": [
+   "Serbia",
+   "Republic of Serbia",
+   "Servia",
+   "Srbija",
+   "Republika Srbija",
+   "Serbia and Montenegro",
+   "Yugoslavia",
+   "Kingdom of Serbia",
+   "Raka",
+   "Serboslavia"
+  ],
+  "image": "img/countries/serbia.webp"
+ },
+ {
+  "id": "senegal",
+  "name": "Senegal",
+  "aliases": [
+   "Senegal",
+   "Republic of Senegal",
+   "Rpublique du Sngal",
+   "Rewum Senegal"
+  ],
+  "image": "img/countries/senegal.webp"
+ },
+ {
+  "id": "burkina-faso",
+  "name": "Burkina Faso",
+  "aliases": [
+   "Burkina Faso",
+   "Upper Volta",
+   "Haute-Volta",
+   "Bourkina-Fasso French the the Upper Volta the the"
+  ],
+  "image": "img/countries/burkina-faso.webp"
+ },
+ {
+  "id": "nepal",
+  "name": "Nepal",
+  "aliases": [
+   "Nepal",
+   "Federal Democratic Republic Of Nepal",
+   "Kingdom of Nepal"
+  ],
+  "image": "img/countries/nepal.webp"
+ },
+ {
+  "id": "yemen",
+  "name": "Yemen",
+  "aliases": [
+   "Yemen",
+   "Republic of Yemen",
+   "al-Jumhryah al-Yamanyah"
+  ],
+  "image": "img/countries/yemen.webp"
+ },
+ {
+  "id": "gabon",
+  "name": "Gabon",
+  "aliases": [
+   "Gabon",
+   "Gabonese Republic"
+  ],
+  "image": "img/countries/gabon.webp"
+ },
+ {
+  "id": "somalia",
+  "name": "Somalia",
+  "aliases": [
+   "Somalia",
+   "Federal Republic of Somalia",
+   "Jamhuuriyadda Federaalka Soomaaliya"
+  ],
+  "image": "img/countries/somalia.webp"
+ },
+ {
+  "id": "cambodia",
+  "name": "Cambodia",
+  "aliases": [
+   "Cambodia",
+   "Kingdom of Cambodia",
+   "Royaume du Cambodge",
+   "Kampuchea the language and Khmer",
+   "Khmer Republic",
+   "Democratic Kampuchea",
+   "People's Republic of Kampuchea",
+   "State of Cambodia"
+  ],
+  "image": "img/countries/cambodia.webp"
+ },
+ {
+  "id": "panama",
+  "name": "Panama",
+  "aliases": [
+   "Panama",
+   "Republic of Panama",
+   "Repblica de Panam"
+  ],
+  "image": "img/countries/panama.webp"
+ },
+ {
+  "id": "azerbaijan",
+  "name": "Azerbaijan",
+  "aliases": [
+   "Azerbaijan",
+   "Republic of Azerbaijan",
+   "Azrbaycan Respublikas",
+   "Azerbaijan Soviet Socialist Republic",
+   "Azerbaijan SSR"
+  ],
+  "image": "img/countries/azerbaijan.webp"
+ },
+ {
+  "id": "dominican-republic",
+  "name": "Dominican Republic",
+  "aliases": [
+   "Dominican Republic",
+   "Repblica Dominicana"
+  ],
+  "image": "img/countries/dominican-republic.webp"
+ },
+ {
+  "id": "laos",
+  "name": "Laos",
+  "aliases": [
+   "Laos",
+   "Lao People's Democratic Republic",
+   "Sathalanalat Paxathipatai Paxaxn",
+   "Rpublique dmocratique populaire lao"
+  ],
+  "image": "img/countries/laos.webp"
+ },
+ {
+  "id": "congo",
+  "name": "Congo",
+  "aliases": [
+   "Congo",
+   "Republic of the Congo",
+   "Congo-Brazzaville",
+   "Congo Republic",
+   "Rpublique du Congo",
+   "Repubilika ya Kngo",
+   "Republki ya Kong"
+  ],
+  "image": "img/countries/congo.webp"
+ },
+ {
+  "id": "lithuania",
+  "name": "Lithuania",
+  "aliases": [
+   "Lithuania",
+   "Republic of Lithuania",
+   "Lietuvos Respublika",
+   "Lietuva",
+   "Lita"
+  ],
+  "image": "img/countries/lithuania.webp"
+ },
+ {
+  "id": "jordan",
+  "name": "Jordan",
+  "aliases": [
+   "Jordan",
+   "Hashemite Kingdom of Jordan",
+   "HKJ",
+   "on"
+  ],
+  "image": "img/countries/jordan.webp"
+ },
+ {
+  "id": "guinea",
+  "name": "Guinea",
+  "aliases": [
+   "Guinea",
+   "Republic of Guinea",
+   "Rpublique de Guine",
+   "Gine",
+   "Republik bu Gine",
+   "French Guinea",
+   "Guine franaise",
+   "Guinea-Conakry"
+  ],
+  "image": "img/countries/guinea.webp"
+ },
+ {
+  "id": "croatia",
+  "name": "Croatia",
+  "aliases": [
+   "Croatia",
+   "Republic of Croatia",
+   "Republika Hrvatska",
+   "Hrvatska",
+   "Hrvaka",
+   "Hrvatistan"
+  ],
+  "image": "img/countries/croatia.webp"
+ },
+ {
+  "id": "syria",
+  "name": "Syria",
+  "aliases": [
+   "Syria",
+   "Syrian Arab Republic",
+   "al-Jumhryah al-Arabyah as-Sryah"
+  ],
+  "image": "img/countries/syria.webp"
+ },
+ {
+  "id": "costa-rica",
+  "name": "Costa Rica",
+  "aliases": [
+   "Costa Rica",
+   "Republic of Costa Rica",
+   "Repblica de Costa Rica"
+  ],
+  "image": "img/countries/costa-rica.webp"
+ },
+ {
+  "id": "honduras",
+  "name": "Honduras",
+  "aliases": [
+   "Honduras",
+   "Republic of Honduras",
+   "Repblica de Honduras"
+  ],
+  "image": "img/countries/honduras.webp"
+ },
+ {
+  "id": "south-sudan",
+  "name": "South Sudan",
+  "aliases": [
+   "South Sudan",
+   "Republic of South Sudan",
+   "Jamhuri ya Sudan Kusini"
+  ],
+  "image": "img/countries/south-sudan.webp"
+ },
+ {
+  "id": "iceland",
+  "name": "Iceland",
+  "aliases": [
+   "Iceland",
+   "Republic of Iceland",
+   "sland",
+   "Lveldi sland",
+   "Fold",
+   "Thule",
+   "Frn",
+   "safold"
+  ],
+  "image": "img/countries/iceland.webp"
+ },
+ {
+  "id": "latvia",
+  "name": "Latvia",
+  "aliases": [
+   "Latvia",
+   "Republic of Latvia",
+   "Latvijas Republika",
+   "Latvija",
+   "Lettland",
+   "Letland",
+   "Letonija",
+   "Lettonie"
+  ],
+  "image": "img/countries/latvia.webp"
+ },
+ {
+  "id": "kuwait",
+  "name": "Kuwait",
+  "aliases": [
+   "Kuwait",
+   "State of Kuwait",
+   "Dawlat al-Kuwait",
+   "al-Kuwait"
+  ],
+  "image": "img/countries/kuwait.webp"
+ },
+ {
+  "id": "qatar",
+  "name": "Qatar",
+  "aliases": [
+   "Qatar",
+   "State of Qatar",
+   "Dawlat Qaar"
+  ],
+  "image": "img/countries/qatar.webp"
+ },
+ {
+  "id": "benin",
+  "name": "Benin",
+  "aliases": [
+   "Benin",
+   "Republic of Benin",
+   "Dahomey",
+   "Rpublique du Bnin"
+  ],
+  "image": "img/countries/benin.webp"
+ },
+ {
+  "id": "north-korea",
+  "name": "North Korea",
+  "aliases": [
+   "North Korea",
+   "Democratic People's Republic of Korea",
+   "D.P.R.K.",
+   "DPRK",
+   "Choson Minjujuui Inmin Konghwaguk",
+   "Cho-son",
+   "DPR Korea",
+   "Korea"
+  ],
+  "image": "img/countries/north-korea.webp"
+ },
+ {
+  "id": "nicaragua",
+  "name": "Nicaragua",
+  "aliases": [
+   "Nicaragua",
+   "Republic of Nicaragua",
+   "Repblica de Nicaragua"
+  ],
+  "image": "img/countries/nicaragua.webp"
+ },
+ {
+  "id": "kyrgyzstan",
+  "name": "Kyrgyzstan",
+  "aliases": [
+   "Kyrgyzstan",
+   "Kyrgyz Republic",
+   "Kyrgyz",
+   "Kyrgyz Respublikasy",
+   "Russian",
+   "Kyrgyzskaya Respublika",
+   "Kirghiz Soviet Socialist Republic Soviet",
+   "Sovettik Sotsialisttik Respublikasy Soviet",
+   "Sovetskaya Sotsialisticheskaya Respublika Soviet",
+   "Kirghizia",
+   "Kirgizstan of the",
+   "Republic of Kyrgyzstan"
+  ],
+  "image": "img/countries/kyrgyzstan.webp"
+ },
+ {
+  "id": "guyana",
+  "name": "Guyana",
+  "aliases": [
+   "Guyana",
+   "Cooperative Republic of Guyana",
+   "British Guiana"
+  ],
+  "image": "img/countries/guyana.webp"
+ },
+ {
+  "id": "estonia",
+  "name": "Estonia",
+  "aliases": [
+   "Estonia",
+   "Republic of Estonia",
+   "Esthonia",
+   "Eesti",
+   "Eesti Vabariik",
+   "Viru",
+   "Viro",
+   "Estland",
+   "Maarjamaa",
+   "Igaunija"
+  ],
+  "image": "img/countries/estonia.webp"
+ },
+ {
+  "id": "central-african-republic",
+  "name": "Central African Republic",
+  "aliases": [
+   "Central African Republic",
+   "Oubangui-Chari",
+   "Ubangi-Shari",
+   "Rpublique Centrafricaine",
+   "Empire Centrafricain",
+   "Central African Empire"
+  ],
+  "image": "img/countries/central-african-republic.webp"
+ },
+ {
+  "id": "malawi",
+  "name": "Malawi",
+  "aliases": [
+   "Malawi",
+   "Republic of Malawi",
+   "Nyasaland"
+  ],
+  "image": "img/countries/malawi.webp"
+ },
+ {
+  "id": "georgia",
+  "name": "Georgia",
+  "aliases": [
+   "Georgia",
+   "Sakartvelo",
+   "Iberia",
+   "Colchis",
+   "Iveria",
+   "Republic of Georgia",
+   "Sakartvelos Respublika",
+   "Grcistan"
+  ],
+  "image": "img/countries/georgia.webp"
+ },
+ {
+  "id": "slovenia",
+  "name": "Slovenia",
+  "aliases": [
+   "Slovenia",
+   "Republic of Slovenia",
+   "Slovenija",
+   "Republika Slovenija",
+   "RS"
+  ],
+  "image": "img/countries/slovenia.webp"
+ },
+ {
+  "id": "tajikistan",
+  "name": "Tajikistan",
+  "aliases": [
+   "Tajikistan",
+   "Republic of Tajikistan",
+   "Jumhurii Tojikiston",
+   "Tadzhikistan"
+  ],
+  "image": "img/countries/tajikistan.webp"
+ },
+ {
+  "id": "bosnia-and-herzegovina",
+  "name": "Bosnia and Herzegovina",
+  "aliases": [
+   "Bosnia and Herzegovina",
+   "Republic of Bosnia and Herzegovina",
+   "Socialist Republic of Bosnia and Herzegovina",
+   "Bosnia"
+  ],
+  "image": "img/countries/bosnia-and-herzegovina.webp"
+ },
+ {
+  "id": "el-salvador",
+  "name": "El Salvador",
+  "aliases": [
+   "El Salvador",
+   "Republic of El Salvador",
+   "Repblica de El Salvador"
+  ],
+  "image": "img/countries/el-salvador.webp"
+ },
+ {
+  "id": "haiti",
+  "name": "Haiti",
+  "aliases": [
+   "Haiti",
+   "Republic of Haiti",
+   "Rpublique d'Hati",
+   "Repiblik d Ayiti",
+   "Hati",
+   "Ayiti",
+   "Hayti"
+  ],
+  "image": "img/countries/haiti.webp"
+ },
+ {
+  "id": "suriname",
+  "name": "Suriname",
+  "aliases": [
+   "Suriname",
+   "Republic of Suriname",
+   "Dutch Guiana",
+   "Netherlands Guiana",
+   "Republiek Suriname",
+   "Surinam"
+  ],
+  "image": "img/countries/suriname.webp"
+ },
+ {
+  "id": "albania",
+  "name": "Albania",
+  "aliases": [
+   "Albania",
+   "Republic of Albania",
+   "Republika e Shqipris",
+   "Arnavutluk",
+   "Arbanon",
+   "People's Socialist Republic of Albania",
+   "Republika Popullore Socialiste e Shqipris",
+   "Albanian Kingdom",
+   "Mbretnija Shqiptare"
+  ],
+  "image": "img/countries/albania.webp"
+ },
+ {
+  "id": "togo",
+  "name": "Togo",
+  "aliases": [
+   "Togo",
+   "Togolese Republic",
+   "Rpublique togolaise"
+  ],
+  "image": "img/countries/togo.webp"
+ },
+ {
+  "id": "moldova",
+  "name": "Moldova",
+  "aliases": [
+   "Moldova",
+   "Republic of Moldova",
+   "Republica Moldova",
+   "Moldavian Soviet Socialist Republic Soviet",
+   "Soviet",
+   "Bessarabia",
+   "Bassarabia",
+   "Bodan of",
+   "former and Ottoman Empire",
+   "Moldavia",
+   "Moldau"
+  ],
+  "image": "img/countries/moldova.webp"
+ },
+ {
+  "id": "armenia",
+  "name": "Armenia",
+  "aliases": [
+   "Armenia",
+   "Republic of Armenia",
+   "Hayastan",
+   "Hayastani Hanrapetutyun"
+  ],
+  "image": "img/countries/armenia.webp"
+ },
+ {
+  "id": "lebanon",
+  "name": "Lebanon",
+  "aliases": [
+   "Lebanon",
+   "The Lebanese Republic",
+   "Al-Jumhuriyya Al-Lubnaniyya",
+   "Lebnan",
+   "Lubnan",
+   "Liban",
+   "Levanon"
+  ],
+  "image": "img/countries/lebanon.webp"
+ },
+ {
+  "id": "north-macedonia",
+  "name": "North Macedonia",
+  "aliases": [
+   "North Macedonia",
+   "Republic of North Macedonia",
+   "Republic of Macedonia",
+   "The former Yugoslav Republic of Macedonia",
+   "FYROM",
+   "Paeonia",
+   "Vardar Banovina Yugoslav"
+  ],
+  "image": "img/countries/north-macedonia.webp"
+ },
+ {
+  "id": "equatorial-guinea",
+  "name": "Equatorial Guinea",
+  "aliases": [
+   "Equatorial Guinea",
+   "Republic of Equatorial Guinea",
+   "Repblica de Guinea Ecuatorial",
+   "Rpublique de Guine quatoriale",
+   "Repblica da Guin Equatorial",
+   "Guinea Ecuatorial",
+   "Guine quatoriale",
+   "Guin Equatorial"
+  ],
+  "image": "img/countries/equatorial-guinea.webp"
+ },
+ {
+  "id": "sierra-leone",
+  "name": "Sierra Leone",
+  "aliases": [
+   "Sierra Leone",
+   "Republic of Sierra Leone",
+   "Salone"
+  ],
+  "image": "img/countries/sierra-leone.webp"
+ },
+ {
+  "id": "rwanda",
+  "name": "Rwanda",
+  "aliases": [
+   "Rwanda",
+   "Republic of Rwanda",
+   "Rpublique du Rwanda",
+   "Repubulika y'u Rwanda",
+   "\"Pays des mille collines\"",
+   "Ruanda"
+  ],
+  "image": "img/countries/rwanda.webp"
+ },
+ {
+  "id": "singapore",
+  "name": "Singapore",
+  "aliases": [
+   "Singapore",
+   "Republic of Singapore",
+   "Singapura",
+   "Sinhapura",
+   "Land of",
+   "Pulau Ujong",
+   "little red dot"
+  ],
+  "image": "img/countries/singapore.webp"
+ },
+ {
+  "id": "eritrea",
+  "name": "Eritrea",
+  "aliases": [
+   "Eritrea",
+   "State of Eritrea",
+   "Italian Eritrea"
+  ],
+  "image": "img/countries/eritrea.webp"
+ },
+ {
+  "id": "liberia",
+  "name": "Liberia",
+  "aliases": [
+   "Liberia",
+   "Republic of Liberia"
+  ],
+  "image": "img/countries/liberia.webp"
+ },
+ {
+  "id": "cyprus",
+  "name": "Cyprus",
+  "aliases": [
+   "Cyprus",
+   "Republic of Cyprus",
+   "Kypriaki Dimokratia",
+   "Kbrs Cumhuriyeti",
+   "Kypros",
+   "Kbrs",
+   "Island of Venus"
+  ],
+  "image": "img/countries/cyprus.webp"
+ },
+ {
+  "id": "luxembourg",
+  "name": "Luxembourg",
+  "aliases": [
+   "Luxembourg",
+   "Grand Duchy of Luxembourg",
+   "Groussherzogdem Ltzebuerg",
+   "Ltzebuerg",
+   "Grand-Duch de Luxembourg",
+   "Groherzogtum Luxemburg",
+   "Luxemburg",
+   "Luxemburgo",
+   "Spanish",
+   "Lussemburgo"
+  ],
+  "image": "img/countries/luxembourg.webp"
+ },
+ {
+  "id": "jamaica",
+  "name": "Jamaica",
+  "aliases": [
+   "Jamaica",
+   "Xamayca of"
+  ],
+  "image": "img/countries/jamaica.webp"
+ },
+ {
+  "id": "the-bahamas",
+  "name": "The Bahamas",
+  "aliases": [
+   "The Bahamas",
+   "Commonwealth of The Bahamas",
+   "Commonwealth of the Bahama Islands",
+   "Bahama Islands"
+  ],
+  "image": "img/countries/the-bahamas.webp"
+ },
+ {
+  "id": "trinidad-and-tobago",
+  "name": "Trinidad and Tobago",
+  "aliases": [
+   "Trinidad and Tobago",
+   "Republic of Trinidad and Tobago",
+   "Trinbago",
+   "Iere",
+   "of the"
+  ],
+  "image": "img/countries/trinidad-and-tobago.webp"
+ },
+ {
+  "id": "palestine",
+  "name": "Palestine",
+  "aliases": [
+   "Palestine",
+   "State of Palestine",
+   "the Holy Land",
+   "Eretz Yisrael",
+   "Palestinian National Authority",
+   "West and Strip",
+   "Palestinian territories",
+   "Occupied Palestinian Territory Occupied Palestinian Territories",
+   "Israeli-occupied territories of the territories Israel",
+   "Mandatory Palestine"
+  ],
+  "image": "img/countries/palestine.webp"
+ },
+ {
+  "id": "burundi",
+  "name": "Burundi",
+  "aliases": [
+   "Burundi",
+   "Republic of Burundi",
+   "Republika y'Uburundi",
+   "Rpublique du Burundi",
+   "Kingdom of Burundi"
+  ],
+  "image": "img/countries/burundi.webp"
+ },
+ {
+  "id": "kosovo",
+  "name": "Kosovo",
+  "aliases": [
+   "Kosovo",
+   "Republic of Kosovo",
+   "Republika e Kosovs",
+   "Republika Kosovo",
+   "Kossovo"
+  ],
+  "image": "img/countries/kosovo.webp"
+ },
+ {
+  "id": "bhutan",
+  "name": "Bhutan",
+  "aliases": [
+   "Bhutan",
+   "Kingdom of Bhutan",
+   "Druk Gyal Khap"
+  ],
+  "image": "img/countries/bhutan.webp"
+ },
+ {
+  "id": "djibouti",
+  "name": "Djibouti",
+  "aliases": [
+   "Djibouti",
+   "Republic of Djibouti",
+   "French Territory of the Afars and the Issas",
+   "French Somaliland",
+   "Obock Territory names",
+   "Territoire franais des Afars et des Issas",
+   "Cte franaise des Somalis",
+   "Territoire d'Obock names",
+   "Rpublique de Djibouti"
+  ],
+  "image": "img/countries/djibouti.webp"
+ },
+ {
+  "id": "eswatini",
+  "name": "Eswatini",
+  "aliases": [
+   "Eswatini",
+   "Kingdom of Eswatini",
+   "Swaziland"
+  ],
+  "image": "img/countries/eswatini.webp"
+ },
+ {
+  "id": "brunei",
+  "name": "Brunei",
+  "aliases": [
+   "Brunei",
+   "Nation of Brunei",
+   "the Abode of Peace",
+   "State of Brunei",
+   "Negara Brunei Darussalam",
+   "Brunei Darussalam"
+  ],
+  "image": "img/countries/brunei.webp"
+ },
+ {
+  "id": "montenegro",
+  "name": "Montenegro",
+  "aliases": [
+   "Montenegro",
+   "Crna Gora",
+   "Republic of Montenegro",
+   "Republika Crna Gora",
+   "Mali i Zi",
+   "Karadag",
+   "Duklja",
+   "Zeta",
+   "Black Mountain"
+  ],
+  "image": "img/countries/montenegro.webp"
+ },
+ {
+  "id": "fiji",
+  "name": "Fiji",
+  "aliases": [
+   "Fiji",
+   "Republic of Fiji",
+   "Matanitu Tugalala o Viti"
+  ],
+  "image": "img/countries/fiji.webp"
+ },
+ {
+  "id": "lesotho",
+  "name": "Lesotho",
+  "aliases": [
+   "Lesotho",
+   "Kingdom of Lesotho",
+   "Basutoland"
+  ],
+  "image": "img/countries/lesotho.webp"
+ },
+ {
+  "id": "belize",
+  "name": "Belize",
+  "aliases": [
+   "Belize",
+   "British Honduras"
+  ],
+  "image": "img/countries/belize.webp"
+ },
+ {
+  "id": "guinea-bissau",
+  "name": "Guinea-Bissau",
+  "aliases": [
+   "Guinea-Bissau",
+   "Republic of Guinea-Bissau",
+   "Portuguese Guinea",
+   "Guin-Bissao",
+   "Guinea",
+   "Guinea-Bissau the Republic of"
+  ],
+  "image": "img/countries/guinea-bissau.webp"
+ },
+ {
+  "id": "solomon-islands",
+  "name": "Solomon Islands",
+  "aliases": [
+   "Solomon Islands",
+   "British Solomon Islands Protectorate",
+   "The Solomons"
+  ],
+  "image": "img/countries/solomon-islands.webp"
+ },
+ {
+  "id": "bahrain",
+  "name": "Bahrain",
+  "aliases": [
+   "Bahrain",
+   "Kingdom of Bahrain",
+   "Mamlakat al-Barayn",
+   "State of Bahrain"
+  ],
+  "image": "img/countries/bahrain.webp"
+ },
+ {
+  "id": "east-timor",
+  "name": "East Timor",
+  "aliases": [
+   "East Timor",
+   "Democratic Republic of Timor-Leste",
+   "Timor-Leste",
+   "Portuguese Timor"
+  ],
+  "image": "img/countries/east-timor.webp"
+ },
+ {
+  "id": "mauritius",
+  "name": "Mauritius",
+  "aliases": [
+   "Mauritius",
+   "Republic of Mauritius",
+   "Rpublique de Maurice",
+   "Repiblik Moris"
+  ],
+  "image": "img/countries/mauritius.webp"
+ },
+ {
+  "id": "the-gambia",
+  "name": "The Gambia",
+  "aliases": [
+   "The Gambia",
+   "Republic of The Gambia"
+  ],
+  "image": "img/countries/the-gambia.webp"
+ },
+ {
+  "id": "vanuatu",
+  "name": "Vanuatu",
+  "aliases": [
+   "Vanuatu",
+   "Republic of Vanuatu",
+   "New Hebrides British and French",
+   "Niuhebridis",
+   "Nouvelles Hebrides",
+   "Rpublique de Vanuatu",
+   "Ripablik blong Vanuatu",
+   "Vanuatri"
+  ],
+  "image": "img/countries/vanuatu.webp"
+ },
+ {
+  "id": "cape-verde",
+  "name": "Cape Verde",
+  "aliases": [
+   "Cape Verde",
+   "Republic of Cabo Verde",
+   "Repblica de Cabo Verde",
+   "Repblika di Kabu Verdi",
+   "Cabo Verde",
+   "Portuguese and the of Cabo Verde"
+  ],
+  "image": "img/countries/cape-verde.webp"
+ },
+ {
+  "id": "malta",
+  "name": "Malta",
+  "aliases": [
+   "Malta",
+   "Republic of Malta",
+   "Repubblica ta' Malta",
+   "Melita"
+  ],
+  "image": "img/countries/malta.webp"
+ },
+ {
+  "id": "comoros",
+  "name": "Comoros",
+  "aliases": [
+   "Comoros",
+   "Union of the Comoros",
+   "Union des Comores",
+   "Udzima wa Komori",
+   "al-Ittid al-Qumur",
+   "United Republic of the Commoros"
+  ],
+  "image": "img/countries/comoros.webp"
+ },
+ {
+  "id": "samoa",
+  "name": "Samoa",
+  "aliases": [
+   "Samoa",
+   "Independent State of Samoa",
+   "Malo Saoloto Tutoatasi o Smoa"
+  ],
+  "image": "img/countries/samoa.webp"
+ },
+ {
+  "id": "barbados",
+  "name": "Barbados",
+  "aliases": [
+   "Barbados"
+  ],
+  "image": "img/countries/barbados.webp"
+ },
+ {
+  "id": "maldives",
+  "name": "Maldives",
+  "aliases": [
+   "Maldives",
+   "Republic of Maldives",
+   "Dhivehi Raajjeyge Jumhooriyyaa",
+   "The Maldive Islands",
+   "Mahal Dvipa or Malldvipa",
+   "ad-dawlat al-mahal dbyt"
+  ],
+  "image": "img/countries/maldives.webp"
+ },
+ {
+  "id": "andorra",
+  "name": "Andorra",
+  "aliases": [
+   "Andorra",
+   "Principality of Andorra",
+   "Principat d'Andorra",
+   "Principality of the Valleys of Andorra"
+  ],
+  "image": "img/countries/andorra.webp"
+ },
+ {
+  "id": "saint-lucia",
+  "name": "Saint Lucia",
+  "aliases": [
+   "Saint Lucia",
+   "Sainte-Lucie"
+  ],
+  "image": "img/countries/saint-lucia.webp"
+ },
+ {
+  "id": "liechtenstein",
+  "name": "Liechtenstein",
+  "aliases": [
+   "Liechtenstein",
+   "Principality of Liechtenstein",
+   "Frstentum Liechtenstein"
+  ],
+  "image": "img/countries/liechtenstein.webp"
+ },
+ {
+  "id": "antigua-and-barbuda",
+  "name": "Antigua and Barbuda",
+  "aliases": [
+   "Antigua and Barbuda",
+   "Wadadli the of Antigua"
+  ],
+  "image": "img/countries/antigua-and-barbuda.webp"
+ },
+ {
+  "id": "seychelles",
+  "name": "Seychelles",
+  "aliases": [
+   "Seychelles",
+   "Republic of Seychelles",
+   "Rpublique des Seychelles",
+   "Repiblik Sesel"
+  ],
+  "image": "img/countries/seychelles.webp"
+ },
+ {
+  "id": "sao-tome-and-principe",
+  "name": "São Tomé and Príncipe",
+  "aliases": [
+   "São Tomé and Príncipe",
+   "Democratic Republic of So Tom and Prncipe",
+   "Repblica Democrtica de So Tom e Prncipe",
+   "Saint Thomas and Prince"
+  ],
+  "image": "img/countries/sao-tome-and-principe.webp"
+ },
+ {
+  "id": "dominica",
+  "name": "Dominica",
+  "aliases": [
+   "Dominica",
+   "Commonwealth of Dominica",
+   "Dominique",
+   "Dominik",
+   "Dominican",
+   "Waitu kubuli"
+  ],
+  "image": "img/countries/dominica.webp"
+ },
+ {
+  "id": "grenada",
+  "name": "Grenada",
+  "aliases": [
+   "Grenada",
+   "Gwenad"
+  ],
+  "image": "img/countries/grenada.webp"
+ },
+ {
+  "id": "tonga",
+  "name": "Tonga",
+  "aliases": [
+   "Tonga",
+   "Kingdom of Tonga",
+   "Puleanga Fakatui o Tonga"
+  ],
+  "image": "img/countries/tonga.webp"
+ },
+ {
+  "id": "saint-vincent-and-the-grenadines",
+  "name": "Saint Vincent and the Grenadines",
+  "aliases": [
+   "Saint Vincent and the Grenadines",
+   "Saint Vincent",
+   "Hairouna"
+  ],
+  "image": "img/countries/saint-vincent-and-the-grenadines.webp"
+ },
+ {
+  "id": "micronesia",
+  "name": "Micronesia",
+  "aliases": [
+   "Micronesia",
+   "Federated States of Micronesia",
+   "FSM"
+  ],
+  "image": "img/countries/micronesia.webp"
+ },
+ {
+  "id": "saint-kitts-and-nevis",
+  "name": "Saint Kitts and Nevis",
+  "aliases": [
+   "Saint Kitts and Nevis",
+   "Federation of Saint Christopher and Nevis",
+   "Federation of Saint Kitts and Nevis",
+   "Saint Christopher and Nevis",
+   "Saint Christopher-Nevis-Anguilla",
+   "Saint Kitts-Nevis-Anguilla",
+   "Saint Kitts or Saint Christopher",
+   "Liamuiga and Oualie names of the of Saint Kitts and Nevis"
+  ],
+  "image": "img/countries/saint-kitts-and-nevis.webp"
+ },
+ {
+  "id": "kiribati",
+  "name": "Kiribati",
+  "aliases": [
+   "Kiribati",
+   "Republic of Kiribati",
+   "Ribaberiki ni Kiribati",
+   "Gilbert Islands",
+   "Kingsmill Group"
+  ],
+  "image": "img/countries/kiribati.webp"
+ },
+ {
+  "id": "san-marino",
+  "name": "San Marino",
+  "aliases": [
+   "San Marino",
+   "Republic of San Marino",
+   "Repubblica di San Marino",
+   "Ripbblica d' San Marein",
+   "Most Serene Republic of San Marino",
+   "Serenissima Repubblica di San Marino"
+  ],
+  "image": "img/countries/san-marino.webp"
+ },
+ {
+  "id": "palau",
+  "name": "Palau",
+  "aliases": [
+   "Palau",
+   "Republic of Palau",
+   "Belau"
+  ],
+  "image": "img/countries/palau.webp"
+ },
+ {
+  "id": "marshall-islands",
+  "name": "Marshall Islands",
+  "aliases": [
+   "Marshall Islands",
+   "Republic of the Marshall Islands",
+   "Aolepn Aorkin aje"
+  ],
+  "image": "img/countries/marshall-islands.webp"
+ },
+ {
+  "id": "monaco",
+  "name": "Monaco",
+  "aliases": [
+   "Monaco",
+   "Principality of Monaco",
+   "Principaut de Monaco",
+   "Principatu de Mnegu",
+   "Principato di Monaco",
+   "Principat de Mnegue"
+  ],
+  "image": "img/countries/monaco.webp"
+ },
+ {
+  "id": "nauru",
+  "name": "Nauru",
+  "aliases": [
+   "Nauru",
+   "Republic of Nauru",
+   "Repubrikin Naoero",
+   "Pleasant Island"
+  ],
+  "image": "img/countries/nauru.webp"
+ },
+ {
+  "id": "tuvalu",
+  "name": "Tuvalu",
+  "aliases": [
+   "Tuvalu",
+   "Ellice Islands"
+  ],
+  "image": "img/countries/tuvalu.webp"
+ },
+ {
+  "id": "vatican-city",
+  "name": "Vatican City",
+  "aliases": [
+   "Vatican City",
+   "Vatican City State",
+   "Status Civitatis Vaticanae",
+   "Stato della Citt del Vaticano",
+   "Holy See"
+  ],
+  "image": "img/countries/vatican-city.webp"
+ }
+]
