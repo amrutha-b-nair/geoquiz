@@ -42,16 +42,54 @@ test('playing a quiz: right answer, wrong answer, finish', async ({ page, reques
   await expect(page.locator('#feedback')).toContainText(first.name);
   await expect(page.locator('#score')).toHaveText('1 / 10');
 
-  await expect(page.locator('#question-count')).toHaveText('Country 2 of 10');
+  await expect(page.locator('#question-count')).toHaveText('1 of 10 answered');
   await page.locator('#answer').fill('definitely not a country');
   await page.locator('#answer').press('Enter');
   await expect(page.locator('#feedback')).toHaveText(`It was ${second.name}`);
 
-  await expect(page.locator('#question-count')).toHaveText('Country 3 of 10');
-  await page.locator('#quit-btn').click();
+  await expect(page.locator('#question-count')).toHaveText('2 of 10 answered');
+  await page.getByRole('button', { name: 'Finish & see score' }).click();
   await expect(page.locator('#final-score')).toHaveText('1 / 10');
-  await expect(page.locator('#missed li')).toHaveText([second.name]);
+  await expect(page.locator('#final-time')).toHaveText(/⏱ \d+:\d\d/);
+  // The wrong answer first, then the 8 countries not answered yet
+  await expect(page.locator('#missed li')).toHaveCount(9);
+  await expect(page.locator('#missed li').first()).toHaveText(second.name);
+  await expect(page.locator('#missed li').nth(1)).toContainText('not answered');
   expect(errors).toEqual([]);
+});
+
+test('skip for now brings the country back at the end', async ({ page, request }) => {
+  const [first, second] = await loadCountries(request);
+  await page.goto('./');
+  await page.locator('input[name="count"][value="custom"]').check();
+  await page.locator('#custom-count').fill('2');
+  await page.locator('#start-btn').click();
+  await expect(page.locator('#shape')).toHaveAttribute('src', first.image);
+
+  await page.getByRole('button', { name: 'Skip for now' }).click();
+  await expect(page.locator('#shape')).toHaveAttribute('src', second.image);
+  await expect(page.locator('#question-count')).toHaveText('0 of 2 answered');
+  await page.locator('#answer').fill(second.name);
+  await page.locator('#answer').press('Enter');
+
+  // The skipped country comes back, and there is nothing left to skip to
+  await expect(page.locator('#shape')).toHaveAttribute('src', first.image);
+  await expect(page.locator('#feedback')).toHaveText('You skipped this one earlier');
+  await expect(page.getByRole('button', { name: 'Skip for now' })).toBeDisabled();
+  await page.locator('#answer').fill(first.name);
+  await page.locator('#answer').press('Enter');
+  await expect(page.locator('#final-score')).toHaveText('2 / 2');
+  await expect(page.locator('#missed-wrap')).toBeHidden();
+});
+
+test('the timer counts up while playing', async ({ page }) => {
+  await page.clock.install();
+  await startQuiz(page);
+  await expect(page.locator('#clock')).toHaveText('0:00');
+  await page.clock.runFor(65_000);
+  await expect(page.locator('#clock')).toHaveText('1:05');
+  await page.getByRole('button', { name: 'Finish & see score' }).click();
+  await expect(page.locator('#final-time')).toHaveText('⏱ 1:05');
 });
 
 test('the quiz screen fits without scrolling', async ({ page }) => {

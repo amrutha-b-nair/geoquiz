@@ -8,12 +8,16 @@
     countries: [],
     ownerOf: new Map(),
     questions: [],
-    index: 0,
     score: 0,
     missed: [],
     settings: { order: 'difficulty', count: '10', custom: '', showAnswers: true, sound: true },
+    queue: [],
+    skipped: new Set(),
     busy: false,
-    timer: null,
+    pending: null, // pause after an answer before the next country
+    clock: null,
+    startedAt: 0,
+    endedAt: 0,
   };
 
   // ---------- Sound ----------
@@ -79,66 +83,111 @@
     return a;
   }
 
-  function stopTimer() {
-    clearTimeout(state.timer);
-    state.timer = null;
+  // ---------- Timer ----------
+  function formatTime(ms) {
+    const total = Math.floor(ms / 1000);
+    const h = Math.floor(total / 3600);
+    const m = Math.floor((total % 3600) / 60);
+    const sec = String(total % 60).padStart(2, '0');
+    return h ? `${h}:${String(m).padStart(2, '0')}:${sec}` : `${m}:${sec}`;
+  }
+
+  function elapsed() {
+    return (state.endedAt || Date.now()) - state.startedAt;
+  }
+
+  function tick() {
+    $('clock').textContent = formatTime(elapsed());
+  }
+
+  function startClock() {
+    stopClock();
+    state.startedAt = Date.now();
+    state.endedAt = 0;
+    tick();
+    state.clock = setInterval(tick, 1000);
+  }
+
+  function stopClock() {
+    clearInterval(state.clock);
+    state.clock = null;
+    if (state.startedAt && !state.endedAt) state.endedAt = Date.now();
+  }
+
+  // ---------- Quiz flow ----------
+  // state.queue holds the countries still to answer; the first one is on screen.
+  // "Skip for now" moves it to the back of the queue so it comes back later.
+
+  function cancelPending() {
+    clearTimeout(state.pending);
+    state.pending = null;
   }
 
   function startQuiz() {
-    stopTimer();
+    cancelPending();
     const n = questionCount();
     state.questions = state.settings.order === 'random'
       ? shuffle(state.countries).slice(0, n)
       : state.countries.slice(0, n);
-    state.index = 0;
+    state.queue = state.questions.slice();
+    state.skipped = new Set();
     state.score = 0;
     state.missed = [];
     show('quiz');
+    startClock();
     showQuestion();
   }
 
-  function preload(i) {
-    const q = state.questions[i];
+  function preload(q) {
     if (q) new Image().src = q.image;
   }
 
   function showQuestion() {
-    const q = state.questions[state.index];
+    const q = state.queue[0];
     if (!q) return finishQuiz();
     state.busy = false;
+    const total = state.questions.length;
+    const answered = total - state.queue.length;
     $('shape').src = q.image;
-    $('feedback').textContent = '';
-    $('feedback').className = 'feedback';
     $('shape-wrap').className = 'shape';
+    $('feedback').className = 'feedback';
+    $('feedback').textContent = state.skipped.has(q.id) ? 'You skipped this one earlier' : '';
     $('answer').value = '';
     $('answer').disabled = false;
     $('submit-btn').disabled = false;
-    $('skip-btn').disabled = false;
-    $('question-count').textContent = `Country ${state.index + 1} of ${state.questions.length}`;
-    $('progress').style.width = `${(state.index / state.questions.length) * 100}%`;
+    $('skip-btn').disabled = state.queue.length < 2; // nothing to come back to
+    $('question-count').textContent = `${answered} of ${total} answered`;
+    $('progress').style.width = `${(answered / total) * 100}%`;
     updateScore();
     $('answer').focus();
-    preload(state.index + 1);
+    preload(state.queue[1]);
   }
 
   function updateScore() {
     $('score').textContent = `${state.score} / ${state.questions.length}`;
   }
 
-  function submitAnswer(skipped) {
+  function skipQuestion() {
+    if (state.busy || state.queue.length < 2) return;
+    const q = state.queue.shift();
+    state.queue.push(q);
+    state.skipped.add(q.id);
+    showQuestion();
+  }
+
+  function submitAnswer() {
     if (state.busy) return;
-    const q = state.questions[state.index];
+    const q = state.queue[0];
     const answer = $('answer').value;
-    if (!skipped && !answer.trim()) return $('answer').focus();
+    if (!answer.trim()) return $('answer').focus();
 
     state.busy = true;
     $('answer').disabled = true;
     $('submit-btn').disabled = true;
     $('skip-btn').disabled = true;
 
-    const right = !skipped && GeoMatch.isCorrect(answer, q, state.ownerOf);
     let delay = 700;
-    if (right) {
+    if (GeoMatch.isCorrect(answer, q, state.ownerOf)) {
       state.score++;
       play('correct');
       $('feedback').textContent = `✓ ${q.name}`;
@@ -153,26 +202,48 @@
         $('feedback').textContent = `It was ${q.name}`;
         delay = 1800;
       } else {
-        $('feedback').textContent = skipped ? 'Skipped' : '✗ Not quite';
+        $('feedback').textContent = '✗ Not quite';
       }
     }
     updateScore();
-    state.timer = setTimeout(() => {
-      state.timer = null;
-      state.index++;
+    state.pending = setTimeout(() => {
+      state.pending = null;
+      state.queue.shift();
       showQuestion();
     }, delay);
   }
 
+  function reviewItem(country, note) {
+    const li = document.createElement('li');
+    const img = document.createElement('img');
+    img.src = country.image;
+    img.alt = '';
+    img.loading = 'lazy';
+    const name = document.createElement('span');
+    name.textContent = country.name;
+    li.append(img, name);
+    if (note) {
+      const small = document.createElement('span');
+      small.className = 'note';
+      small.textContent = note;
+      li.append(small);
+    }
+    return li;
+  }
+
   function finishQuiz() {
     // Finishing during the feedback pause still counts the answer just given.
-    if (state.timer) {
-      stopTimer();
-      state.index++;
+    if (state.pending) {
+      cancelPending();
+      state.queue.shift();
     }
+    stopClock();
     const total = state.questions.length;
-    const answered = Math.min(state.index, total);
+    const unanswered = state.queue.slice();
+    const answered = total - unanswered.length;
+    const time = formatTime(elapsed());
     $('final-score').textContent = `${state.score} / ${total}`;
+    $('final-time').textContent = `⏱ ${time}`;
     const pct = total ? state.score / total : 0;
     $('final-message').textContent =
       answered < total ? `You answered ${answered} of ${total} before finishing.` :
@@ -180,19 +251,11 @@
       pct >= 0.7 ? 'Great job!' :
       pct >= 0.4 ? 'Not bad, keep practising!' : 'Every expert started somewhere. Try again!';
 
-    const list = $('missed');
-    list.replaceChildren(...state.missed.map((c) => {
-      const li = document.createElement('li');
-      const img = document.createElement('img');
-      img.src = c.image;
-      img.alt = '';
-      img.loading = 'lazy';
-      const span = document.createElement('span');
-      span.textContent = c.name;
-      li.append(img, span);
-      return li;
-    }));
-    $('missed-wrap').hidden = state.missed.length === 0;
+    $('missed').replaceChildren(
+      ...state.missed.map((c) => reviewItem(c)),
+      ...unanswered.map((c) => reviewItem(c, 'not answered'))
+    );
+    $('missed-wrap').hidden = state.missed.length + unanswered.length === 0;
     show('results');
     $('again-btn').focus();
   }
@@ -211,12 +274,14 @@
     });
     $('answer-form').addEventListener('submit', (e) => {
       e.preventDefault();
-      submitAnswer(false);
+      submitAnswer();
     });
-    $('skip-btn').addEventListener('click', () => submitAnswer(true));
+    $('skip-btn').addEventListener('click', skipQuestion);
     $('quit-btn').addEventListener('click', finishQuiz);
     $('again-btn').addEventListener('click', startQuiz);
     $('home-btn').addEventListener('click', () => show('home'));
+    // Keep the clock honest when the phone wakes up from the background.
+    document.addEventListener('visibilitychange', () => { if (state.clock) tick(); });
   }
 
   async function init() {

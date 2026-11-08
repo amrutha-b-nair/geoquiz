@@ -97,7 +97,8 @@ input:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
 
 /* Quiz */
 .topbar { display: flex; align-items: center; gap: 10px; }
-.topbar .btn { padding: 8px 6px; }
+.clock { font-weight: 600; font-variant-numeric: tabular-nums; color: var(--muted); min-width: 3.5em; }
+.clock::before { content: "⏱ "; }
 .progress-wrap { flex: 1; height: 8px; background: var(--border); border-radius: 99px; overflow: hidden; }
 .progress { height: 100%; width: 0; background: var(--primary); transition: width .3s; }
 .score { font-weight: 700; font-variant-numeric: tabular-nums; min-width: 4.5em; text-align: right; }
@@ -123,11 +124,15 @@ input:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
 .feedback.bad { color: var(--bad); }
 
 .answer { display: flex; gap: 8px; }
+.quiz-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.quiz-actions .btn { padding: 10px 8px; font-size: .95rem; }
 .answer input { flex: 1; min-width: 0; }
 
 /* Results */
 .results { text-align: center; }
 .results h2 { margin: 0; color: var(--muted); font-size: 1rem; font-weight: 600; }
+.final-time { margin: 0; color: var(--muted); font-weight: 600; font-variant-numeric: tabular-nums; }
+.missed .note { color: var(--muted); font-size: .8rem; }
 .big-score { font-size: 3rem; font-weight: 800; margin: 4px 0; font-variant-numeric: tabular-nums; }
 .actions { display: grid; gap: 10px; margin-top: 16px; }
 .missed { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px; }
