@@ -1,6 +1,6 @@
 // Offline support: cache the app shell up front, country images as they are seen.
 // Bump VERSION whenever you change files in web/ so users get the update.
-const VERSION = 'geoquiz-v2';
+const VERSION = 'geoquiz-v3';
 const SHELL = [
   './',
   'index.html',

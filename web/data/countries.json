@@ -143,7 +143,8 @@
    "Insulinde the",
    "Indunesia Dutch East",
    "Indonesi",
-   "Dutch East Indies or Netherlands East-Indies",
+   "Dutch East Indies",
+   "Netherlands East-Indies",
    "Nederlandsch-Indi",
    "Hindia Belanda"
   ],
@@ -214,7 +215,8 @@
    "Niemcy",
    "Nmetorszg",
    "Germany a of the Alemannia and a of Nemacia",
-   "names Bavaria or the former Prussia Germany",
+   "names Bavaria",
+   "the former Prussia Germany",
    "Saksa",
    "the East Germany",
    "Deutsche Demokratische Republik",
@@ -258,10 +260,11 @@
   "name": "United Kingdom",
   "aliases": [
    "United Kingdom",
+   "UK",
    "United Kingdom of Great Britain and Northern Ireland",
    "Britain",
    "Great Britain",
-   "U.K. or UK",
+   "U.K.",
    "Albion",
    "Britannia",
    "Anglia",
@@ -299,6 +302,8 @@
   "name": "Turkey",
   "aliases": [
    "Turkey",
+   "Türkiye",
+   "Turkiye",
    "Republic of Trkiye",
    "Trkiye Cumhuriyeti",
    "Asia Minor",
@@ -523,6 +528,8 @@
   "name": "Democratic Republic of Congo",
   "aliases": [
    "Democratic Republic of Congo",
+   "DR Congo",
+   "Congo-Kinshasa",
    "Democratic Republic of the Congo",
    "Zaire",
    "Republic of the",
@@ -545,7 +552,8 @@
    "Malaya",
    "Sabah and Sarawak",
    "names of the",
-   "Tanah Melayu or Land",
+   "Tanah Melayu",
+   "Land",
    "Mlixy",
    "Malciya"
   ],
@@ -581,7 +589,8 @@
    "UA",
    "UKR.",
    "Kievan Rus East the the",
-   "Kingdom of GaliciaVolhynia or Kingdom of Ruthenia of",
+   "Kingdom of GaliciaVolhynia",
+   "Kingdom of Ruthenia of",
    "Zaporizhian Host the on the of Ukraine and"
   ],
   "image": "img/countries/ukraine.svg"
@@ -710,7 +719,8 @@
   "aliases": [
    "Romania",
    "Romnia",
-   "Rumania or Roumania",
+   "Rumania",
+   "Roumania",
    "Kingdom of Romania",
    "Regatul Romniei",
    "Romanian People's Republic Communist",
@@ -860,9 +870,9 @@
   "name": "United Arab Emirates",
   "aliases": [
    "United Arab Emirates",
+   "UAE",
    "Trucial States",
    "Al Emirat al Arabbiya al Muttahida",
-   "UAE",
    "U.A.E.",
    "Trucial Arabia",
    "The Emirates"
@@ -994,7 +1004,8 @@
    "Regno Portugalensium and Portugalis",
    "Portugalliae et Algarbiae",
    "Portugalliae",
-   "Lusitaniae Purtugall Burtughl the and and Portingall or Portingal and Ocidental Praia Lusitana and Ptria Lusitana the and and of the and Luxitania and Portugraal of"
+   "Lusitaniae Purtugall Burtughl the and and Portingall",
+   "Portingal and Ocidental Praia Lusitana and Ptria Lusitana the and and of the and Luxitania and Portugraal of"
   ],
   "image": "img/countries/portugal.svg"
  },
@@ -1023,7 +1034,8 @@
    "Bohemia",
    "Czechland",
    "the Czechlands",
-   "esk zem or esk socialistick republika the Socialist",
+   "esk zem",
+   "esk socialistick republika the Socialist",
    "SR",
    "CSR",
    "Protektort echy a Morava the of Bohemia",
@@ -1176,7 +1188,8 @@
   "aliases": [
    "Mozambique",
    "Republic of Mozambique",
-   "Moambique or Repblica de Moambique",
+   "Moambique",
+   "Repblica de Moambique",
    "Mozambiki",
    "Msumbiji",
    "Muzambhiki"
@@ -1188,6 +1201,7 @@
   "name": "Papua New Guinea",
   "aliases": [
    "Papua New Guinea",
+   "PNG",
    "Independent State of Papua New Guinea",
    "Independen Stet bilong Papua Niugini",
    "Independen Stet bilong Papua Niu Gini",
@@ -1282,7 +1296,8 @@
   "aliases": [
    "Zimbabwe",
    "Republic of Zimbabwe",
-   "Rhodesia or Republic of Rhodesia names",
+   "Rhodesia",
+   "Republic of Rhodesia names",
    "Southern Rhodesia"
   ],
   "image": "img/countries/zimbabwe.svg"
@@ -1490,6 +1505,8 @@
   "name": "Laos",
   "aliases": [
    "Laos",
+   "Lao",
+   "Lao PDR",
    "Lao People's Democratic Republic",
    "Sathalanalat Paxathipatai Paxaxn",
    "Rpublique dmocratique populaire lao"
@@ -1501,8 +1518,8 @@
   "name": "Congo",
   "aliases": [
    "Congo",
-   "Republic of the Congo",
    "Congo-Brazzaville",
+   "Republic of the Congo",
    "Congo Republic",
    "Rpublique du Congo",
    "Repubilika ya Kngo",
@@ -1739,6 +1756,7 @@
   "name": "Central African Republic",
   "aliases": [
    "Central African Republic",
+   "CAR",
    "Oubangui-Chari",
    "Ubangi-Shari",
    "Rpublique Centrafricaine",
@@ -1917,6 +1935,7 @@
   "name": "North Macedonia",
   "aliases": [
    "North Macedonia",
+   "Macedonia",
    "Republic of North Macedonia",
    "Republic of Macedonia",
    "The former Yugoslav Republic of Macedonia",
@@ -2053,6 +2072,7 @@
   "name": "Trinidad and Tobago",
   "aliases": [
    "Trinidad and Tobago",
+   "Trinidad",
    "Republic of Trinidad and Tobago",
    "Trinbago",
    "Iere",
@@ -2338,7 +2358,8 @@
    "Republic of Maldives",
    "Dhivehi Raajjeyge Jumhooriyyaa",
    "The Maldive Islands",
-   "Mahal Dvipa or Malldvipa",
+   "Mahal Dvipa",
+   "Malldvipa",
    "ad-dawlat al-mahal dbyt"
   ],
   "image": "img/countries/maldives.svg"
@@ -2378,6 +2399,7 @@
   "name": "Antigua and Barbuda",
   "aliases": [
    "Antigua and Barbuda",
+   "Antigua",
    "Wadadli the of Antigua"
   ],
   "image": "img/countries/antigua-and-barbuda.svg"
@@ -2398,6 +2420,7 @@
   "name": "São Tomé and Príncipe",
   "aliases": [
    "São Tomé and Príncipe",
+   "São Tomé",
    "Democratic Republic of So Tom and Prncipe",
    "Repblica Democrtica de So Tom e Prncipe",
    "Saint Thomas and Prince"
@@ -2466,7 +2489,8 @@
    "Saint Christopher and Nevis",
    "Saint Christopher-Nevis-Anguilla",
    "Saint Kitts-Nevis-Anguilla",
-   "Saint Kitts or Saint Christopher",
+   "Saint Kitts",
+   "Saint Christopher",
    "Liamuiga and Oualie names of the of Saint Kitts and Nevis"
   ],
   "image": "img/countries/saint-kitts-and-nevis.svg"
@@ -2554,6 +2578,7 @@
   "name": "Vatican City",
   "aliases": [
    "Vatican City",
+   "Vatican",
    "Vatican City State",
    "Status Civitatis Vaticanae",
    "Stato della Citt del Vaticano",
