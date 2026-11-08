@@ -73,8 +73,13 @@ JUNK = {
 KM_PER_DEG = 111.32
 CLUSTER_GAP_FRACTION = 0.15   # parts closer than this * sqrt(main area) belong together
 CLUSTER_GAP_MIN_KM = 250      # ... or closer than this, whichever is larger
-ABSORB_GROWTH = 1.3           # keep a far part in place if it grows the frame <= 30%
-ABSORB_GROWTH_TOTAL = 1.6
+# A separated part stays in place unless that would mostly add empty sea to the
+# picture: "fill" is the share of the frame covered by land. Keeping a part may
+# lower the fill to at most KEEP_FILL of what it was (and KEEP_FILL_TOTAL of the
+# main part's fill overall). Big nearby parts such as Malaysian Borneo add a lot
+# of land and stay; far or small ones (Alaska, Hawaii, Galapagos) go in boxes.
+KEEP_FILL = 0.8
+KEEP_FILL_TOTAL = 0.6
 MAX_INSETS = 5
 MIN_INSET_AREA = 2e-4         # drop specks smaller than this fraction of the main part
 VIEW = 1000                   # SVG units on the longest side
@@ -233,13 +238,15 @@ def split_main_and_insets(polys):
         return [polys], 0
     main, others = cluster(polys, lat0)
 
-    # Keep nearby or in-frame parts in place when they barely enlarge the frame.
-    start = bbox_area(main["box"])
+    # Keep a part in place when the picture stays mostly land; box it otherwise.
+    start_fill = main["area"] / bbox_area(main["box"])
     others.sort(key=lambda c: bbox_gap(main["box"], c["box"]))
     insets = []
     for c in others:
         grown = bbox_union(main["box"], c["box"])
-        if bbox_area(grown) <= ABSORB_GROWTH * bbox_area(main["box"]) and bbox_area(grown) <= ABSORB_GROWTH_TOTAL * start:
+        fill_now = main["area"] / bbox_area(main["box"])
+        fill_new = (main["area"] + c["area"]) / bbox_area(grown)
+        if fill_new >= KEEP_FILL * fill_now and fill_new >= KEEP_FILL_TOTAL * start_fill:
             main["members"] += c["members"]
             main["box"] = grown
             main["area"] += c["area"]
