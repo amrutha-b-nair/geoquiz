@@ -1,5 +1,6 @@
 // Offline support: cache the app shell up front, country images as they are seen.
-// Bump VERSION whenever you change files in web/ so users get the update.
+// VERSION is replaced with the commit id on every deploy (see .github/workflows/pages.yml),
+// so returning players always get the latest files.
 const VERSION = 'geoquiz-v3';
 const SHELL = [
   './',

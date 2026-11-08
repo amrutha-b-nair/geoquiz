@@ -2,30 +2,42 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main, master]
-    paths: ['web/**', '.github/workflows/pages.yml']
+    branches: [main]
+    paths: ['web/**', 'tests/**', 'package*.json', '.github/workflows/**']
   workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false # never interrupt a deploy that is under way
 
 jobs:
+  ci:
+    name: Test
+    uses: ./.github/workflows/ci.yml
+    permissions:
+      contents: read
+
   deploy:
+    name: Deploy
+    needs: ci
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/checkout@v7
+      - name: Stamp the offline cache with this commit
+        # Returning players get the new version instead of their cached copy.
+        run: |
+          sed -i "s/^const VERSION = .*/const VERSION = 'geoquiz-${GITHUB_SHA::8}';/" web/sw.js
+          grep -n "const VERSION" web/sw.js
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: web
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
