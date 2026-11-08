@@ -53,7 +53,7 @@
     <!-- Quiz -->
     <section id="screen-quiz" class="screen" aria-label="Quiz">
       <div class="topbar">
-        <button type="button" class="btn ghost" id="quit-btn" aria-label="Finish quiz">✕ Finish</button>
+        <div class="clock" id="clock" role="timer" aria-label="Time">0:00</div>
         <div class="progress-wrap" aria-hidden="true"><div class="progress" id="progress"></div></div>
         <div class="score" id="score" aria-live="polite">0 / 0</div>
       </div>
@@ -71,7 +71,10 @@
                autocapitalize="words" autocorrect="off" spellcheck="false" enterkeyhint="go">
         <button type="submit" class="btn primary" id="submit-btn">Submit</button>
       </form>
-      <button type="button" class="btn ghost" id="skip-btn">Skip</button>
+      <div class="quiz-actions">
+        <button type="button" class="btn" id="skip-btn">Skip for now</button>
+        <button type="button" class="btn" id="quit-btn">Finish &amp; see score</button>
+      </div>
     </section>
 
     <!-- Results -->
@@ -79,6 +82,7 @@
       <div class="card results">
         <h2 id="results-title">Your score</h2>
         <p class="big-score" id="final-score"></p>
+        <p class="final-time" id="final-time"></p>
         <p id="final-message"></p>
         <div class="actions">
           <button type="button" class="btn primary big" id="again-btn">Play again</button>
