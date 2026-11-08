@@ -1,2 +1,2 @@
 # Needed by tools/build_web_data.py (pinned so CI output is reproducible)
-numpy==2.5.3
+numpy==2.5.4
