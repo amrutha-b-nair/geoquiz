@@ -9,7 +9,9 @@
       .replace(/[̀-ͯ]/g, '') // strip accents: "São Tomé" -> "Sao Tome"
       .toLowerCase()
       .replace(/&/g, ' and ')
+      .replace(/['’.]/g, '') // "U.K." -> "uk", "Cote d'Ivoire" -> "cote divoire"
       .replace(/[^a-z0-9]+/g, ' ')
+      .replace(/\bst\b/g, 'saint') // "St Lucia" -> "saint lucia"
       .replace(/^the /, '')
       .trim();
   }

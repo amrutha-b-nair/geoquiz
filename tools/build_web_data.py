@@ -46,6 +46,23 @@ NAME_FALLBACK = {"Kosovo": "Kosovo"}  # no ISO code in the CSV
 # Display names that read better than the dataset's official names.
 DISPLAY_NAMES = {"People's Republic of China": "China"}
 
+# Common short names missing from the scraped data.
+EXTRA_ALIASES = {
+    "Democratic Republic of Congo": ["DR Congo", "Congo-Kinshasa"],
+    "Congo": ["Congo-Brazzaville"],
+    "Papua New Guinea": ["PNG"],
+    "Central African Republic": ["CAR"],
+    "Vatican City": ["Vatican"],
+    "North Macedonia": ["Macedonia"],
+    "Turkey": ["Türkiye", "Turkiye"],
+    "São Tomé and Príncipe": ["São Tomé"],
+    "Trinidad and Tobago": ["Trinidad"],
+    "Antigua and Barbuda": ["Antigua"],
+    "Laos": ["Lao", "Lao PDR"],
+    "United Arab Emirates": ["UAE"],
+    "United Kingdom": ["UK"],
+}
+
 # Fragments left over from scraping that should never count as an answer.
 JUNK = {
     "", "a", "an", "and", "or", "of", "the", "the of", "former", "new", "east",
@@ -74,7 +91,11 @@ def slugify(name: str) -> str:
 
 def clean_aliases(country: str, raw: str) -> list[str]:
     seen, out = set(), []
-    for alias in [country, DISPLAY_NAMES.get(country, country), *raw.split(",")]:
+    names = [country, DISPLAY_NAMES.get(country, country), *EXTRA_ALIASES.get(country, [])]
+    # The scraped data sometimes joins names with "or": "U.K. or UK".
+    for part in raw.split(","):
+        names += re.split(r"\s+or\s+", part)
+    for alias in names:
         alias = re.sub(r"[()]", "", alias).strip()
         alias = re.sub(r"\s+(or|and|former)$", "", alias)
         key = alias.lower()
