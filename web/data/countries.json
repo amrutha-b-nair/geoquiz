@@ -15,7 +15,7 @@
    "Columbia",
    "Usonia"
   ],
-  "image": "img/countries/united-states.webp"
+  "image": "img/countries/united-states.svg"
  },
  {
   "id": "people-s-republic-of-china",
@@ -32,7 +32,7 @@
    "Cathay",
    "Zhongguo the China Chinese"
   ],
-  "image": "img/countries/people-s-republic-of-china.webp"
+  "image": "img/countries/people-s-republic-of-china.svg"
  },
  {
   "id": "russia",
@@ -56,7 +56,7 @@
    "Rus",
    "Great Russia"
   ],
-  "image": "img/countries/russia.webp"
+  "image": "img/countries/russia.svg"
  },
  {
   "id": "canada",
@@ -67,7 +67,7 @@
    "Dominion du Canada",
    "Acadia"
   ],
-  "image": "img/countries/canada.webp"
+  "image": "img/countries/canada.svg"
  },
  {
   "id": "brazil",
@@ -82,7 +82,7 @@
    "United States of Brazil",
    "Repblica Federativa do Brasil"
   ],
-  "image": "img/countries/brazil.webp"
+  "image": "img/countries/brazil.svg"
  },
  {
   "id": "australia",
@@ -92,7 +92,7 @@
    "Commonwealth of Australia",
    "New Holland"
   ],
-  "image": "img/countries/australia.webp"
+  "image": "img/countries/australia.svg"
  },
  {
   "id": "india",
@@ -113,7 +113,7 @@
    "Aryavarta",
    "Jumhryat-e Bhrat"
   ],
-  "image": "img/countries/india.webp"
+  "image": "img/countries/india.svg"
  },
  {
   "id": "mexico",
@@ -129,7 +129,7 @@
    "MX",
    "Aztln"
   ],
-  "image": "img/countries/mexico.webp"
+  "image": "img/countries/mexico.svg"
  },
  {
   "id": "indonesia",
@@ -147,7 +147,7 @@
    "Nederlandsch-Indi",
    "Hindia Belanda"
   ],
-  "image": "img/countries/indonesia.webp"
+  "image": "img/countries/indonesia.svg"
  },
  {
   "id": "france",
@@ -164,7 +164,7 @@
    "Farana",
    "Tsarfat"
   ],
-  "image": "img/countries/france.webp"
+  "image": "img/countries/france.svg"
  },
  {
   "id": "japan",
@@ -173,7 +173,7 @@
    "Japan",
    "Nippon"
   ],
-  "image": "img/countries/japan.webp"
+  "image": "img/countries/japan.svg"
  },
  {
   "id": "saudi-arabia",
@@ -190,7 +190,7 @@
    "Saudi regime",
    "Arav haSa'udit"
   ],
-  "image": "img/countries/saudi-arabia.webp"
+  "image": "img/countries/saudi-arabia.svg"
  },
  {
   "id": "germany",
@@ -222,7 +222,7 @@
    "DDR",
    "GDR"
   ],
-  "image": "img/countries/germany.webp"
+  "image": "img/countries/germany.svg"
  },
  {
   "id": "argentina",
@@ -236,7 +236,7 @@
    "United Provinces of the Ro de la Plata",
    "Argentine Confederation"
   ],
-  "image": "img/countries/argentina.webp"
+  "image": "img/countries/argentina.svg"
  },
  {
   "id": "iran",
@@ -251,7 +251,7 @@
    "I.R.I.",
    "I.R.I"
   ],
-  "image": "img/countries/iran.webp"
+  "image": "img/countries/iran.svg"
  },
  {
   "id": "united-kingdom",
@@ -272,7 +272,7 @@
    "Cambria",
    "Northern Ulster"
   ],
-  "image": "img/countries/united-kingdom.webp"
+  "image": "img/countries/united-kingdom.svg"
  },
  {
   "id": "spain",
@@ -292,7 +292,7 @@
    "Iberia the",
    "Sepharad"
   ],
-  "image": "img/countries/spain.webp"
+  "image": "img/countries/spain.svg"
  },
  {
   "id": "turkey",
@@ -306,7 +306,7 @@
    "Ottoman Empire",
    "Turkish Empire"
   ],
-  "image": "img/countries/turkey.webp"
+  "image": "img/countries/turkey.svg"
  },
  {
   "id": "italy",
@@ -324,7 +324,7 @@
    "Enotria",
    "Tirrenia"
   ],
-  "image": "img/countries/italy.webp"
+  "image": "img/countries/italy.svg"
  },
  {
   "id": "kazakhstan",
@@ -339,7 +339,7 @@
    "Keestik Socalstik Respwblkas Soviet",
    "Kazakhskaya Sovetskaya Sotsialisticheskaya Respublika Soviet"
   ],
-  "image": "img/countries/kazakhstan.webp"
+  "image": "img/countries/kazakhstan.svg"
  },
  {
   "id": "south-africa",
@@ -353,7 +353,7 @@
    "Zuid-Afrika",
    "Union of South Africa"
   ],
-  "image": "img/countries/south-africa.webp"
+  "image": "img/countries/south-africa.svg"
  },
  {
   "id": "egypt",
@@ -366,7 +366,7 @@
    "Aegyptus",
    "Kmi"
   ],
-  "image": "img/countries/egypt.webp"
+  "image": "img/countries/egypt.svg"
  },
  {
   "id": "nigeria",
@@ -378,7 +378,7 @@
    "Jamhuriyar Taraiyar Najeriya",
    "hjk hnz Najry"
   ],
-  "image": "img/countries/nigeria.webp"
+  "image": "img/countries/nigeria.svg"
  },
  {
   "id": "algeria",
@@ -390,7 +390,7 @@
    "al-Jumhriyya al-Jaziriyya ad-Dmuqriyya aabiyya",
    "Rpublique algrienne dmocratique et populaire"
   ],
-  "image": "img/countries/algeria.webp"
+  "image": "img/countries/algeria.svg"
  },
  {
   "id": "colombia",
@@ -403,7 +403,7 @@
    "Confederacin Granadina",
    "Repblica de la Nueva Granada"
   ],
-  "image": "img/countries/colombia.webp"
+  "image": "img/countries/colombia.svg"
  },
  {
   "id": "pakistan",
@@ -418,7 +418,7 @@
    "Sindhustan and Indoscythia",
    "Mumlikat-e Khudadaad Pakistan of"
   ],
-  "image": "img/countries/pakistan.webp"
+  "image": "img/countries/pakistan.svg"
  },
  {
   "id": "peru",
@@ -431,7 +431,7 @@
    "Peruvian Republic",
    "Repblica Peruana"
   ],
-  "image": "img/countries/peru.webp"
+  "image": "img/countries/peru.svg"
  },
  {
   "id": "sweden",
@@ -445,7 +445,7 @@
    "Thule",
    "Svitjod"
   ],
-  "image": "img/countries/sweden.webp"
+  "image": "img/countries/sweden.svg"
  },
  {
   "id": "thailand",
@@ -455,7 +455,7 @@
    "Kingdom of Thailand",
    "Siam"
   ],
-  "image": "img/countries/thailand.webp"
+  "image": "img/countries/thailand.svg"
  },
  {
   "id": "chile",
@@ -468,7 +468,7 @@
    "Reyno de Chile",
    "Capitania general de Chile"
   ],
-  "image": "img/countries/chile.webp"
+  "image": "img/countries/chile.svg"
  },
  {
   "id": "poland",
@@ -488,7 +488,7 @@
    "Polonia",
    "Lechia"
   ],
-  "image": "img/countries/poland.webp"
+  "image": "img/countries/poland.svg"
  },
  {
   "id": "norway",
@@ -501,7 +501,7 @@
    "Kongeriket Norge",
    "Kongeriket Noreg"
   ],
-  "image": "img/countries/norway.webp"
+  "image": "img/countries/norway.svg"
  },
  {
   "id": "south-korea",
@@ -516,7 +516,7 @@
    "Korea",
    "Korea Republic"
   ],
-  "image": "img/countries/south-korea.webp"
+  "image": "img/countries/south-korea.svg"
  },
  {
   "id": "democratic-republic-of-congo",
@@ -533,7 +533,7 @@
    "Congo Free State",
    "Republic of the Congo"
   ],
-  "image": "img/countries/democratic-republic-of-congo.webp"
+  "image": "img/countries/democratic-republic-of-congo.svg"
  },
  {
   "id": "malaysia",
@@ -549,7 +549,7 @@
    "Mlixy",
    "Malciya"
   ],
-  "image": "img/countries/malaysia.webp"
+  "image": "img/countries/malaysia.svg"
  },
  {
   "id": "vietnam",
@@ -571,7 +571,7 @@
    "VN",
    "V.N."
   ],
-  "image": "img/countries/vietnam.webp"
+  "image": "img/countries/vietnam.svg"
  },
  {
   "id": "ukraine",
@@ -584,7 +584,7 @@
    "Kingdom of GaliciaVolhynia or Kingdom of Ruthenia of",
    "Zaporizhian Host the on the of Ukraine and"
   ],
-  "image": "img/countries/ukraine.webp"
+  "image": "img/countries/ukraine.svg"
  },
  {
   "id": "philippines",
@@ -608,7 +608,7 @@
    "Harng Bayang Katagalugan",
    "Islas de San Lzaro of Saint"
   ],
-  "image": "img/countries/philippines.webp"
+  "image": "img/countries/philippines.svg"
  },
  {
   "id": "ethiopia",
@@ -622,7 +622,7 @@
    "Ethiopi",
    "Al-Habasha"
   ],
-  "image": "img/countries/ethiopia.webp"
+  "image": "img/countries/ethiopia.svg"
  },
  {
   "id": "venezuela",
@@ -636,7 +636,7 @@
    "Estados Unidos de Venezuela",
    "and Repblica de Venezuela"
   ],
-  "image": "img/countries/venezuela.webp"
+  "image": "img/countries/venezuela.svg"
  },
  {
   "id": "finland",
@@ -654,7 +654,7 @@
    "Grand Duchy of",
    "Soome"
   ],
-  "image": "img/countries/finland.webp"
+  "image": "img/countries/finland.svg"
  },
  {
   "id": "iraq",
@@ -666,7 +666,7 @@
    "Assyria",
    "Babylon"
   ],
-  "image": "img/countries/iraq.webp"
+  "image": "img/countries/iraq.svg"
  },
  {
   "id": "angola",
@@ -676,7 +676,7 @@
    "Republic of Angola",
    "Repblica de Angola"
   ],
-  "image": "img/countries/angola.webp"
+  "image": "img/countries/angola.svg"
  },
  {
   "id": "libya",
@@ -691,7 +691,7 @@
    "Socialist People's Libyan Arab Jamahiriya",
    "Great Socialist People's Libyan Arab Jamahiriya"
   ],
-  "image": "img/countries/libya.webp"
+  "image": "img/countries/libya.svg"
  },
  {
   "id": "new-zealand",
@@ -702,7 +702,7 @@
    "Realm of New Zealand Islands",
    "Dominion of New Zealand"
   ],
-  "image": "img/countries/new-zealand.webp"
+  "image": "img/countries/new-zealand.svg"
  },
  {
   "id": "romania",
@@ -718,7 +718,7 @@
    "Socialist Republic of Romania Communist",
    "Republica Socialist Romnia Communist"
   ],
-  "image": "img/countries/romania.webp"
+  "image": "img/countries/romania.svg"
  },
  {
   "id": "sudan",
@@ -731,7 +731,7 @@
    "Mahdist State",
    "Nubia"
   ],
-  "image": "img/countries/sudan.webp"
+  "image": "img/countries/sudan.svg"
  },
  {
   "id": "tanzania",
@@ -745,7 +745,7 @@
    "The Tanganyika",
    "and the Zanzibar"
   ],
-  "image": "img/countries/tanzania.webp"
+  "image": "img/countries/tanzania.svg"
  },
  {
   "id": "kenya",
@@ -757,7 +757,7 @@
    "British East Africa Protectorate a the",
    "Kenya Colony British"
   ],
-  "image": "img/countries/kenya.webp"
+  "image": "img/countries/kenya.svg"
  },
  {
   "id": "morocco",
@@ -769,7 +769,7 @@
    "The Far west kingdom",
    "Maghreb Country"
   ],
-  "image": "img/countries/morocco.webp"
+  "image": "img/countries/morocco.svg"
  },
  {
   "id": "bangladesh",
@@ -785,7 +785,7 @@
    "Pakistan",
    "East Pakistan"
   ],
-  "image": "img/countries/bangladesh.webp"
+  "image": "img/countries/bangladesh.svg"
  },
  {
   "id": "bolivia",
@@ -797,7 +797,7 @@
    "Republic of Bolvar",
    "Republic of Bolivia"
   ],
-  "image": "img/countries/bolivia.webp"
+  "image": "img/countries/bolivia.svg"
  },
  {
   "id": "netherlands",
@@ -813,7 +813,7 @@
    "Pays-Bas",
    "names the of the"
   ],
-  "image": "img/countries/netherlands.webp"
+  "image": "img/countries/netherlands.svg"
  },
  {
   "id": "austria",
@@ -825,7 +825,7 @@
    "sterreich",
    "Federal Republic of Austria"
   ],
-  "image": "img/countries/austria.webp"
+  "image": "img/countries/austria.svg"
  },
  {
   "id": "myanmar",
@@ -836,7 +836,7 @@
    "Burma",
    "Pyidaunzu Thanmda Myma Nainngandaw"
   ],
-  "image": "img/countries/myanmar.webp"
+  "image": "img/countries/myanmar.svg"
  },
  {
   "id": "ireland",
@@ -853,7 +853,7 @@
    "Fodla",
    "Hibernia"
   ],
-  "image": "img/countries/ireland.webp"
+  "image": "img/countries/ireland.svg"
  },
  {
   "id": "united-arab-emirates",
@@ -867,7 +867,7 @@
    "Trucial Arabia",
    "The Emirates"
   ],
-  "image": "img/countries/united-arab-emirates.webp"
+  "image": "img/countries/united-arab-emirates.svg"
  },
  {
   "id": "switzerland",
@@ -886,7 +886,7 @@
    "Helvetia",
    "CH"
   ],
-  "image": "img/countries/switzerland.webp"
+  "image": "img/countries/switzerland.svg"
  },
  {
   "id": "uzbekistan",
@@ -897,7 +897,7 @@
    "Ozbekiston",
    "Ozbekiston Respublikasi"
   ],
-  "image": "img/countries/uzbekistan.webp"
+  "image": "img/countries/uzbekistan.svg"
  },
  {
   "id": "ecuador",
@@ -909,7 +909,7 @@
    "Ikwadur Ripuwlika",
    "Ekuatur Nunka"
   ],
-  "image": "img/countries/ecuador.webp"
+  "image": "img/countries/ecuador.svg"
  },
  {
   "id": "taiwan",
@@ -929,7 +929,7 @@
    "Free China",
    "Formosa"
   ],
-  "image": "img/countries/taiwan.webp"
+  "image": "img/countries/taiwan.svg"
  },
  {
   "id": "greece",
@@ -942,7 +942,7 @@
    "Kingdom of the Hellenes",
    "Yavan"
   ],
-  "image": "img/countries/greece.webp"
+  "image": "img/countries/greece.svg"
  },
  {
   "id": "oman",
@@ -951,7 +951,7 @@
    "Oman",
    "Sultanate of Oman"
   ],
-  "image": "img/countries/oman.webp"
+  "image": "img/countries/oman.svg"
  },
  {
   "id": "turkmenistan",
@@ -961,7 +961,7 @@
    "Trkmenistan",
    "Turkmenia"
   ],
-  "image": "img/countries/turkmenistan.webp"
+  "image": "img/countries/turkmenistan.svg"
  },
  {
   "id": "mali",
@@ -971,7 +971,7 @@
    "Republic of Mali",
    "Rpublique du Mali"
   ],
-  "image": "img/countries/mali.webp"
+  "image": "img/countries/mali.svg"
  },
  {
   "id": "mongolia",
@@ -980,7 +980,7 @@
    "Mongolia",
    "Mongol Uls"
   ],
-  "image": "img/countries/mongolia.webp"
+  "image": "img/countries/mongolia.svg"
  },
  {
   "id": "portugal",
@@ -996,7 +996,7 @@
    "Portugalliae",
    "Lusitaniae Purtugall Burtughl the and and Portingall or Portingal and Ocidental Praia Lusitana and Ptria Lusitana the and and of the and Luxitania and Portugraal of"
   ],
-  "image": "img/countries/portugal.webp"
+  "image": "img/countries/portugal.svg"
  },
  {
   "id": "cote-d-ivoire",
@@ -1008,7 +1008,7 @@
    "the Ivory Coast",
    "Rpublique de Cte d'Ivoire"
   ],
-  "image": "img/countries/cote-d-ivoire.webp"
+  "image": "img/countries/cote-d-ivoire.svg"
  },
  {
   "id": "czech-republic",
@@ -1031,7 +1031,7 @@
    "Koruna esk the",
    "esk konfederace the"
   ],
-  "image": "img/countries/czech-republic.webp"
+  "image": "img/countries/czech-republic.svg"
  },
  {
   "id": "cameroon",
@@ -1042,7 +1042,7 @@
    "United Republic of Cameroon",
    "Kamerun"
   ],
-  "image": "img/countries/cameroon.webp"
+  "image": "img/countries/cameroon.svg"
  },
  {
   "id": "chad",
@@ -1053,7 +1053,7 @@
    "Rpublique du Tchad",
    "Jumhryat Tashd"
   ],
-  "image": "img/countries/chad.webp"
+  "image": "img/countries/chad.svg"
  },
  {
   "id": "niger",
@@ -1064,7 +1064,7 @@
    "The Niger",
    "Rpublique du Niger"
   ],
-  "image": "img/countries/niger.webp"
+  "image": "img/countries/niger.svg"
  },
  {
   "id": "ghana",
@@ -1077,7 +1077,7 @@
    "Ghana Tizuu",
    "Gaana"
   ],
-  "image": "img/countries/ghana.webp"
+  "image": "img/countries/ghana.svg"
  },
  {
   "id": "belgium",
@@ -1092,7 +1092,7 @@
    "Belgi",
    "Belgien"
   ],
-  "image": "img/countries/belgium.webp"
+  "image": "img/countries/belgium.svg"
  },
  {
   "id": "denmark",
@@ -1104,7 +1104,7 @@
    "Kongeriget Danmark",
    "Dania"
   ],
-  "image": "img/countries/denmark.webp"
+  "image": "img/countries/denmark.svg"
  },
  {
   "id": "hungary",
@@ -1125,7 +1125,7 @@
    "Pannonia",
    "Macaristan"
   ],
-  "image": "img/countries/hungary.webp"
+  "image": "img/countries/hungary.svg"
  },
  {
   "id": "paraguay",
@@ -1136,7 +1136,7 @@
    "Repblica del Paraguay",
    "Tet Paragui"
   ],
-  "image": "img/countries/paraguay.webp"
+  "image": "img/countries/paraguay.svg"
  },
  {
   "id": "zambia",
@@ -1146,7 +1146,7 @@
    "Republic of Zambia",
    "Northern Rhodesia"
   ],
-  "image": "img/countries/zambia.webp"
+  "image": "img/countries/zambia.svg"
  },
  {
   "id": "belarus",
@@ -1158,7 +1158,7 @@
    "Byelorussia",
    "White Russia"
   ],
-  "image": "img/countries/belarus.webp"
+  "image": "img/countries/belarus.svg"
  },
  {
   "id": "cuba",
@@ -1168,7 +1168,7 @@
    "Republic of Cuba",
    "Repblica de Cuba"
   ],
-  "image": "img/countries/cuba.webp"
+  "image": "img/countries/cuba.svg"
  },
  {
   "id": "mozambique",
@@ -1181,7 +1181,7 @@
    "Msumbiji",
    "Muzambhiki"
   ],
-  "image": "img/countries/mozambique.webp"
+  "image": "img/countries/mozambique.svg"
  },
  {
   "id": "papua-new-guinea",
@@ -1194,7 +1194,7 @@
    "Papua Niugini",
    "Papua Niu Gini"
   ],
-  "image": "img/countries/papua-new-guinea.webp"
+  "image": "img/countries/papua-new-guinea.svg"
  },
  {
   "id": "uruguay",
@@ -1205,7 +1205,7 @@
    "Repblica Oriental del Uruguay",
    "Repblica Oriental do Uruguai"
   ],
-  "image": "img/countries/uruguay.webp"
+  "image": "img/countries/uruguay.svg"
  },
  {
   "id": "uganda",
@@ -1215,7 +1215,7 @@
    "Republic of Uganda",
    "Jamhuri ya Uganda"
   ],
-  "image": "img/countries/uganda.webp"
+  "image": "img/countries/uganda.svg"
  },
  {
   "id": "mauritania",
@@ -1225,7 +1225,7 @@
    "Islamic Republic of Mauritania",
    "Rpublique Islamique de Mauritanie"
   ],
-  "image": "img/countries/mauritania.webp"
+  "image": "img/countries/mauritania.svg"
  },
  {
   "id": "botswana",
@@ -1235,7 +1235,7 @@
    "Republic of Botswana",
    "Bechuanaland"
   ],
-  "image": "img/countries/botswana.webp"
+  "image": "img/countries/botswana.svg"
  },
  {
   "id": "namibia",
@@ -1246,7 +1246,7 @@
    "German South-West Africa",
    "Deutsch-Sdwestafrika"
   ],
-  "image": "img/countries/namibia.webp"
+  "image": "img/countries/namibia.svg"
  },
  {
   "id": "israel",
@@ -1260,7 +1260,7 @@
    "the entity",
    "Jeshurun"
   ],
-  "image": "img/countries/israel.webp"
+  "image": "img/countries/israel.svg"
  },
  {
   "id": "afghanistan",
@@ -1274,7 +1274,7 @@
    "Da Afnistn Islm Amrt",
    "imrt-i islm-yi Afnistn"
   ],
-  "image": "img/countries/afghanistan.webp"
+  "image": "img/countries/afghanistan.svg"
  },
  {
   "id": "zimbabwe",
@@ -1285,7 +1285,7 @@
    "Rhodesia or Republic of Rhodesia names",
    "Southern Rhodesia"
   ],
-  "image": "img/countries/zimbabwe.webp"
+  "image": "img/countries/zimbabwe.svg"
  },
  {
   "id": "guatemala",
@@ -1295,7 +1295,7 @@
    "Republic of Guatemala",
    "Repblica de Guatemala"
   ],
-  "image": "img/countries/guatemala.webp"
+  "image": "img/countries/guatemala.svg"
  },
  {
   "id": "bulgaria",
@@ -1307,7 +1307,7 @@
    "People's Republic of Bulgaria",
    "Bulgaristan"
   ],
-  "image": "img/countries/bulgaria.webp"
+  "image": "img/countries/bulgaria.svg"
  },
  {
   "id": "madagascar",
@@ -1319,7 +1319,7 @@
    "Repoblikan'i Madagasikara",
    "Rpublique de Madagascar"
   ],
-  "image": "img/countries/madagascar.webp"
+  "image": "img/countries/madagascar.svg"
  },
  {
   "id": "tunisia",
@@ -1328,7 +1328,7 @@
    "Tunisia",
    "Republic of Tunisia"
   ],
-  "image": "img/countries/tunisia.webp"
+  "image": "img/countries/tunisia.svg"
  },
  {
   "id": "slovakia",
@@ -1345,7 +1345,7 @@
    "Slovak State",
    "Slovensk tt"
   ],
-  "image": "img/countries/slovakia.webp"
+  "image": "img/countries/slovakia.svg"
  },
  {
   "id": "sri-lanka",
@@ -1359,7 +1359,7 @@
    "Ratnadeepa of",
    "of the names of Sri"
   ],
-  "image": "img/countries/sri-lanka.webp"
+  "image": "img/countries/sri-lanka.svg"
  },
  {
   "id": "serbia",
@@ -1376,7 +1376,7 @@
    "Raka",
    "Serboslavia"
   ],
-  "image": "img/countries/serbia.webp"
+  "image": "img/countries/serbia.svg"
  },
  {
   "id": "senegal",
@@ -1387,7 +1387,7 @@
    "Rpublique du Sngal",
    "Rewum Senegal"
   ],
-  "image": "img/countries/senegal.webp"
+  "image": "img/countries/senegal.svg"
  },
  {
   "id": "burkina-faso",
@@ -1398,7 +1398,7 @@
    "Haute-Volta",
    "Bourkina-Fasso French the the Upper Volta the the"
   ],
-  "image": "img/countries/burkina-faso.webp"
+  "image": "img/countries/burkina-faso.svg"
  },
  {
   "id": "nepal",
@@ -1408,7 +1408,7 @@
    "Federal Democratic Republic Of Nepal",
    "Kingdom of Nepal"
   ],
-  "image": "img/countries/nepal.webp"
+  "image": "img/countries/nepal.svg"
  },
  {
   "id": "yemen",
@@ -1418,7 +1418,7 @@
    "Republic of Yemen",
    "al-Jumhryah al-Yamanyah"
   ],
-  "image": "img/countries/yemen.webp"
+  "image": "img/countries/yemen.svg"
  },
  {
   "id": "gabon",
@@ -1427,7 +1427,7 @@
    "Gabon",
    "Gabonese Republic"
   ],
-  "image": "img/countries/gabon.webp"
+  "image": "img/countries/gabon.svg"
  },
  {
   "id": "somalia",
@@ -1437,7 +1437,7 @@
    "Federal Republic of Somalia",
    "Jamhuuriyadda Federaalka Soomaaliya"
   ],
-  "image": "img/countries/somalia.webp"
+  "image": "img/countries/somalia.svg"
  },
  {
   "id": "cambodia",
@@ -1452,7 +1452,7 @@
    "People's Republic of Kampuchea",
    "State of Cambodia"
   ],
-  "image": "img/countries/cambodia.webp"
+  "image": "img/countries/cambodia.svg"
  },
  {
   "id": "panama",
@@ -1462,7 +1462,7 @@
    "Republic of Panama",
    "Repblica de Panam"
   ],
-  "image": "img/countries/panama.webp"
+  "image": "img/countries/panama.svg"
  },
  {
   "id": "azerbaijan",
@@ -1474,7 +1474,7 @@
    "Azerbaijan Soviet Socialist Republic",
    "Azerbaijan SSR"
   ],
-  "image": "img/countries/azerbaijan.webp"
+  "image": "img/countries/azerbaijan.svg"
  },
  {
   "id": "dominican-republic",
@@ -1483,7 +1483,7 @@
    "Dominican Republic",
    "Repblica Dominicana"
   ],
-  "image": "img/countries/dominican-republic.webp"
+  "image": "img/countries/dominican-republic.svg"
  },
  {
   "id": "laos",
@@ -1494,7 +1494,7 @@
    "Sathalanalat Paxathipatai Paxaxn",
    "Rpublique dmocratique populaire lao"
   ],
-  "image": "img/countries/laos.webp"
+  "image": "img/countries/laos.svg"
  },
  {
   "id": "congo",
@@ -1508,7 +1508,7 @@
    "Repubilika ya Kngo",
    "Republki ya Kong"
   ],
-  "image": "img/countries/congo.webp"
+  "image": "img/countries/congo.svg"
  },
  {
   "id": "lithuania",
@@ -1520,7 +1520,7 @@
    "Lietuva",
    "Lita"
   ],
-  "image": "img/countries/lithuania.webp"
+  "image": "img/countries/lithuania.svg"
  },
  {
   "id": "jordan",
@@ -1531,7 +1531,7 @@
    "HKJ",
    "on"
   ],
-  "image": "img/countries/jordan.webp"
+  "image": "img/countries/jordan.svg"
  },
  {
   "id": "guinea",
@@ -1546,7 +1546,7 @@
    "Guine franaise",
    "Guinea-Conakry"
   ],
-  "image": "img/countries/guinea.webp"
+  "image": "img/countries/guinea.svg"
  },
  {
   "id": "croatia",
@@ -1559,7 +1559,7 @@
    "Hrvaka",
    "Hrvatistan"
   ],
-  "image": "img/countries/croatia.webp"
+  "image": "img/countries/croatia.svg"
  },
  {
   "id": "syria",
@@ -1569,7 +1569,7 @@
    "Syrian Arab Republic",
    "al-Jumhryah al-Arabyah as-Sryah"
   ],
-  "image": "img/countries/syria.webp"
+  "image": "img/countries/syria.svg"
  },
  {
   "id": "costa-rica",
@@ -1579,7 +1579,7 @@
    "Republic of Costa Rica",
    "Repblica de Costa Rica"
   ],
-  "image": "img/countries/costa-rica.webp"
+  "image": "img/countries/costa-rica.svg"
  },
  {
   "id": "honduras",
@@ -1589,7 +1589,7 @@
    "Republic of Honduras",
    "Repblica de Honduras"
   ],
-  "image": "img/countries/honduras.webp"
+  "image": "img/countries/honduras.svg"
  },
  {
   "id": "south-sudan",
@@ -1599,7 +1599,7 @@
    "Republic of South Sudan",
    "Jamhuri ya Sudan Kusini"
   ],
-  "image": "img/countries/south-sudan.webp"
+  "image": "img/countries/south-sudan.svg"
  },
  {
   "id": "iceland",
@@ -1614,7 +1614,7 @@
    "Frn",
    "safold"
   ],
-  "image": "img/countries/iceland.webp"
+  "image": "img/countries/iceland.svg"
  },
  {
   "id": "latvia",
@@ -1629,7 +1629,7 @@
    "Letonija",
    "Lettonie"
   ],
-  "image": "img/countries/latvia.webp"
+  "image": "img/countries/latvia.svg"
  },
  {
   "id": "kuwait",
@@ -1640,7 +1640,7 @@
    "Dawlat al-Kuwait",
    "al-Kuwait"
   ],
-  "image": "img/countries/kuwait.webp"
+  "image": "img/countries/kuwait.svg"
  },
  {
   "id": "qatar",
@@ -1650,7 +1650,7 @@
    "State of Qatar",
    "Dawlat Qaar"
   ],
-  "image": "img/countries/qatar.webp"
+  "image": "img/countries/qatar.svg"
  },
  {
   "id": "benin",
@@ -1661,7 +1661,7 @@
    "Dahomey",
    "Rpublique du Bnin"
   ],
-  "image": "img/countries/benin.webp"
+  "image": "img/countries/benin.svg"
  },
  {
   "id": "north-korea",
@@ -1676,7 +1676,7 @@
    "DPR Korea",
    "Korea"
   ],
-  "image": "img/countries/north-korea.webp"
+  "image": "img/countries/north-korea.svg"
  },
  {
   "id": "nicaragua",
@@ -1686,7 +1686,7 @@
    "Republic of Nicaragua",
    "Repblica de Nicaragua"
   ],
-  "image": "img/countries/nicaragua.webp"
+  "image": "img/countries/nicaragua.svg"
  },
  {
   "id": "kyrgyzstan",
@@ -1705,7 +1705,7 @@
    "Kirgizstan of the",
    "Republic of Kyrgyzstan"
   ],
-  "image": "img/countries/kyrgyzstan.webp"
+  "image": "img/countries/kyrgyzstan.svg"
  },
  {
   "id": "guyana",
@@ -1715,7 +1715,7 @@
    "Cooperative Republic of Guyana",
    "British Guiana"
   ],
-  "image": "img/countries/guyana.webp"
+  "image": "img/countries/guyana.svg"
  },
  {
   "id": "estonia",
@@ -1732,7 +1732,7 @@
    "Maarjamaa",
    "Igaunija"
   ],
-  "image": "img/countries/estonia.webp"
+  "image": "img/countries/estonia.svg"
  },
  {
   "id": "central-african-republic",
@@ -1745,7 +1745,7 @@
    "Empire Centrafricain",
    "Central African Empire"
   ],
-  "image": "img/countries/central-african-republic.webp"
+  "image": "img/countries/central-african-republic.svg"
  },
  {
   "id": "malawi",
@@ -1755,7 +1755,7 @@
    "Republic of Malawi",
    "Nyasaland"
   ],
-  "image": "img/countries/malawi.webp"
+  "image": "img/countries/malawi.svg"
  },
  {
   "id": "georgia",
@@ -1770,7 +1770,7 @@
    "Sakartvelos Respublika",
    "Grcistan"
   ],
-  "image": "img/countries/georgia.webp"
+  "image": "img/countries/georgia.svg"
  },
  {
   "id": "slovenia",
@@ -1782,7 +1782,7 @@
    "Republika Slovenija",
    "RS"
   ],
-  "image": "img/countries/slovenia.webp"
+  "image": "img/countries/slovenia.svg"
  },
  {
   "id": "tajikistan",
@@ -1793,7 +1793,7 @@
    "Jumhurii Tojikiston",
    "Tadzhikistan"
   ],
-  "image": "img/countries/tajikistan.webp"
+  "image": "img/countries/tajikistan.svg"
  },
  {
   "id": "bosnia-and-herzegovina",
@@ -1804,7 +1804,7 @@
    "Socialist Republic of Bosnia and Herzegovina",
    "Bosnia"
   ],
-  "image": "img/countries/bosnia-and-herzegovina.webp"
+  "image": "img/countries/bosnia-and-herzegovina.svg"
  },
  {
   "id": "el-salvador",
@@ -1814,7 +1814,7 @@
    "Republic of El Salvador",
    "Repblica de El Salvador"
   ],
-  "image": "img/countries/el-salvador.webp"
+  "image": "img/countries/el-salvador.svg"
  },
  {
   "id": "haiti",
@@ -1828,7 +1828,7 @@
    "Ayiti",
    "Hayti"
   ],
-  "image": "img/countries/haiti.webp"
+  "image": "img/countries/haiti.svg"
  },
  {
   "id": "suriname",
@@ -1841,7 +1841,7 @@
    "Republiek Suriname",
    "Surinam"
   ],
-  "image": "img/countries/suriname.webp"
+  "image": "img/countries/suriname.svg"
  },
  {
   "id": "albania",
@@ -1857,7 +1857,7 @@
    "Albanian Kingdom",
    "Mbretnija Shqiptare"
   ],
-  "image": "img/countries/albania.webp"
+  "image": "img/countries/albania.svg"
  },
  {
   "id": "togo",
@@ -1867,7 +1867,7 @@
    "Togolese Republic",
    "Rpublique togolaise"
   ],
-  "image": "img/countries/togo.webp"
+  "image": "img/countries/togo.svg"
  },
  {
   "id": "moldova",
@@ -1885,7 +1885,7 @@
    "Moldavia",
    "Moldau"
   ],
-  "image": "img/countries/moldova.webp"
+  "image": "img/countries/moldova.svg"
  },
  {
   "id": "armenia",
@@ -1896,7 +1896,7 @@
    "Hayastan",
    "Hayastani Hanrapetutyun"
   ],
-  "image": "img/countries/armenia.webp"
+  "image": "img/countries/armenia.svg"
  },
  {
   "id": "lebanon",
@@ -1910,7 +1910,7 @@
    "Liban",
    "Levanon"
   ],
-  "image": "img/countries/lebanon.webp"
+  "image": "img/countries/lebanon.svg"
  },
  {
   "id": "north-macedonia",
@@ -1924,7 +1924,7 @@
    "Paeonia",
    "Vardar Banovina Yugoslav"
   ],
-  "image": "img/countries/north-macedonia.webp"
+  "image": "img/countries/north-macedonia.svg"
  },
  {
   "id": "equatorial-guinea",
@@ -1939,7 +1939,7 @@
    "Guine quatoriale",
    "Guin Equatorial"
   ],
-  "image": "img/countries/equatorial-guinea.webp"
+  "image": "img/countries/equatorial-guinea.svg"
  },
  {
   "id": "sierra-leone",
@@ -1949,7 +1949,7 @@
    "Republic of Sierra Leone",
    "Salone"
   ],
-  "image": "img/countries/sierra-leone.webp"
+  "image": "img/countries/sierra-leone.svg"
  },
  {
   "id": "rwanda",
@@ -1962,7 +1962,7 @@
    "\"Pays des mille collines\"",
    "Ruanda"
   ],
-  "image": "img/countries/rwanda.webp"
+  "image": "img/countries/rwanda.svg"
  },
  {
   "id": "singapore",
@@ -1976,7 +1976,7 @@
    "Pulau Ujong",
    "little red dot"
   ],
-  "image": "img/countries/singapore.webp"
+  "image": "img/countries/singapore.svg"
  },
  {
   "id": "eritrea",
@@ -1986,7 +1986,7 @@
    "State of Eritrea",
    "Italian Eritrea"
   ],
-  "image": "img/countries/eritrea.webp"
+  "image": "img/countries/eritrea.svg"
  },
  {
   "id": "liberia",
@@ -1995,7 +1995,7 @@
    "Liberia",
    "Republic of Liberia"
   ],
-  "image": "img/countries/liberia.webp"
+  "image": "img/countries/liberia.svg"
  },
  {
   "id": "cyprus",
@@ -2009,7 +2009,7 @@
    "Kbrs",
    "Island of Venus"
   ],
-  "image": "img/countries/cyprus.webp"
+  "image": "img/countries/cyprus.svg"
  },
  {
   "id": "luxembourg",
@@ -2026,7 +2026,7 @@
    "Spanish",
    "Lussemburgo"
   ],
-  "image": "img/countries/luxembourg.webp"
+  "image": "img/countries/luxembourg.svg"
  },
  {
   "id": "jamaica",
@@ -2035,7 +2035,7 @@
    "Jamaica",
    "Xamayca of"
   ],
-  "image": "img/countries/jamaica.webp"
+  "image": "img/countries/jamaica.svg"
  },
  {
   "id": "the-bahamas",
@@ -2046,7 +2046,7 @@
    "Commonwealth of the Bahama Islands",
    "Bahama Islands"
   ],
-  "image": "img/countries/the-bahamas.webp"
+  "image": "img/countries/the-bahamas.svg"
  },
  {
   "id": "trinidad-and-tobago",
@@ -2058,7 +2058,7 @@
    "Iere",
    "of the"
   ],
-  "image": "img/countries/trinidad-and-tobago.webp"
+  "image": "img/countries/trinidad-and-tobago.svg"
  },
  {
   "id": "palestine",
@@ -2075,7 +2075,7 @@
    "Israeli-occupied territories of the territories Israel",
    "Mandatory Palestine"
   ],
-  "image": "img/countries/palestine.webp"
+  "image": "img/countries/palestine.svg"
  },
  {
   "id": "burundi",
@@ -2087,7 +2087,7 @@
    "Rpublique du Burundi",
    "Kingdom of Burundi"
   ],
-  "image": "img/countries/burundi.webp"
+  "image": "img/countries/burundi.svg"
  },
  {
   "id": "kosovo",
@@ -2099,7 +2099,7 @@
    "Republika Kosovo",
    "Kossovo"
   ],
-  "image": "img/countries/kosovo.webp"
+  "image": "img/countries/kosovo.svg"
  },
  {
   "id": "bhutan",
@@ -2109,7 +2109,7 @@
    "Kingdom of Bhutan",
    "Druk Gyal Khap"
   ],
-  "image": "img/countries/bhutan.webp"
+  "image": "img/countries/bhutan.svg"
  },
  {
   "id": "djibouti",
@@ -2125,7 +2125,7 @@
    "Territoire d'Obock names",
    "Rpublique de Djibouti"
   ],
-  "image": "img/countries/djibouti.webp"
+  "image": "img/countries/djibouti.svg"
  },
  {
   "id": "eswatini",
@@ -2135,7 +2135,7 @@
    "Kingdom of Eswatini",
    "Swaziland"
   ],
-  "image": "img/countries/eswatini.webp"
+  "image": "img/countries/eswatini.svg"
  },
  {
   "id": "brunei",
@@ -2148,7 +2148,7 @@
    "Negara Brunei Darussalam",
    "Brunei Darussalam"
   ],
-  "image": "img/countries/brunei.webp"
+  "image": "img/countries/brunei.svg"
  },
  {
   "id": "montenegro",
@@ -2164,7 +2164,7 @@
    "Zeta",
    "Black Mountain"
   ],
-  "image": "img/countries/montenegro.webp"
+  "image": "img/countries/montenegro.svg"
  },
  {
   "id": "fiji",
@@ -2174,7 +2174,7 @@
    "Republic of Fiji",
    "Matanitu Tugalala o Viti"
   ],
-  "image": "img/countries/fiji.webp"
+  "image": "img/countries/fiji.svg"
  },
  {
   "id": "lesotho",
@@ -2184,7 +2184,7 @@
    "Kingdom of Lesotho",
    "Basutoland"
   ],
-  "image": "img/countries/lesotho.webp"
+  "image": "img/countries/lesotho.svg"
  },
  {
   "id": "belize",
@@ -2193,7 +2193,7 @@
    "Belize",
    "British Honduras"
   ],
-  "image": "img/countries/belize.webp"
+  "image": "img/countries/belize.svg"
  },
  {
   "id": "guinea-bissau",
@@ -2206,7 +2206,7 @@
    "Guinea",
    "Guinea-Bissau the Republic of"
   ],
-  "image": "img/countries/guinea-bissau.webp"
+  "image": "img/countries/guinea-bissau.svg"
  },
  {
   "id": "solomon-islands",
@@ -2216,7 +2216,7 @@
    "British Solomon Islands Protectorate",
    "The Solomons"
   ],
-  "image": "img/countries/solomon-islands.webp"
+  "image": "img/countries/solomon-islands.svg"
  },
  {
   "id": "bahrain",
@@ -2227,7 +2227,7 @@
    "Mamlakat al-Barayn",
    "State of Bahrain"
   ],
-  "image": "img/countries/bahrain.webp"
+  "image": "img/countries/bahrain.svg"
  },
  {
   "id": "east-timor",
@@ -2238,7 +2238,7 @@
    "Timor-Leste",
    "Portuguese Timor"
   ],
-  "image": "img/countries/east-timor.webp"
+  "image": "img/countries/east-timor.svg"
  },
  {
   "id": "mauritius",
@@ -2249,7 +2249,7 @@
    "Rpublique de Maurice",
    "Repiblik Moris"
   ],
-  "image": "img/countries/mauritius.webp"
+  "image": "img/countries/mauritius.svg"
  },
  {
   "id": "the-gambia",
@@ -2258,7 +2258,7 @@
    "The Gambia",
    "Republic of The Gambia"
   ],
-  "image": "img/countries/the-gambia.webp"
+  "image": "img/countries/the-gambia.svg"
  },
  {
   "id": "vanuatu",
@@ -2273,7 +2273,7 @@
    "Ripablik blong Vanuatu",
    "Vanuatri"
   ],
-  "image": "img/countries/vanuatu.webp"
+  "image": "img/countries/vanuatu.svg"
  },
  {
   "id": "cape-verde",
@@ -2286,7 +2286,7 @@
    "Cabo Verde",
    "Portuguese and the of Cabo Verde"
   ],
-  "image": "img/countries/cape-verde.webp"
+  "image": "img/countries/cape-verde.svg"
  },
  {
   "id": "malta",
@@ -2297,7 +2297,7 @@
    "Repubblica ta' Malta",
    "Melita"
   ],
-  "image": "img/countries/malta.webp"
+  "image": "img/countries/malta.svg"
  },
  {
   "id": "comoros",
@@ -2310,7 +2310,7 @@
    "al-Ittid al-Qumur",
    "United Republic of the Commoros"
   ],
-  "image": "img/countries/comoros.webp"
+  "image": "img/countries/comoros.svg"
  },
  {
   "id": "samoa",
@@ -2320,7 +2320,7 @@
    "Independent State of Samoa",
    "Malo Saoloto Tutoatasi o Smoa"
   ],
-  "image": "img/countries/samoa.webp"
+  "image": "img/countries/samoa.svg"
  },
  {
   "id": "barbados",
@@ -2328,7 +2328,7 @@
   "aliases": [
    "Barbados"
   ],
-  "image": "img/countries/barbados.webp"
+  "image": "img/countries/barbados.svg"
  },
  {
   "id": "maldives",
@@ -2341,7 +2341,7 @@
    "Mahal Dvipa or Malldvipa",
    "ad-dawlat al-mahal dbyt"
   ],
-  "image": "img/countries/maldives.webp"
+  "image": "img/countries/maldives.svg"
  },
  {
   "id": "andorra",
@@ -2352,7 +2352,7 @@
    "Principat d'Andorra",
    "Principality of the Valleys of Andorra"
   ],
-  "image": "img/countries/andorra.webp"
+  "image": "img/countries/andorra.svg"
  },
  {
   "id": "saint-lucia",
@@ -2361,7 +2361,7 @@
    "Saint Lucia",
    "Sainte-Lucie"
   ],
-  "image": "img/countries/saint-lucia.webp"
+  "image": "img/countries/saint-lucia.svg"
  },
  {
   "id": "liechtenstein",
@@ -2371,7 +2371,7 @@
    "Principality of Liechtenstein",
    "Frstentum Liechtenstein"
   ],
-  "image": "img/countries/liechtenstein.webp"
+  "image": "img/countries/liechtenstein.svg"
  },
  {
   "id": "antigua-and-barbuda",
@@ -2380,7 +2380,7 @@
    "Antigua and Barbuda",
    "Wadadli the of Antigua"
   ],
-  "image": "img/countries/antigua-and-barbuda.webp"
+  "image": "img/countries/antigua-and-barbuda.svg"
  },
  {
   "id": "seychelles",
@@ -2391,7 +2391,7 @@
    "Rpublique des Seychelles",
    "Repiblik Sesel"
   ],
-  "image": "img/countries/seychelles.webp"
+  "image": "img/countries/seychelles.svg"
  },
  {
   "id": "sao-tome-and-principe",
@@ -2402,7 +2402,7 @@
    "Repblica Democrtica de So Tom e Prncipe",
    "Saint Thomas and Prince"
   ],
-  "image": "img/countries/sao-tome-and-principe.webp"
+  "image": "img/countries/sao-tome-and-principe.svg"
  },
  {
   "id": "dominica",
@@ -2415,7 +2415,7 @@
    "Dominican",
    "Waitu kubuli"
   ],
-  "image": "img/countries/dominica.webp"
+  "image": "img/countries/dominica.svg"
  },
  {
   "id": "grenada",
@@ -2424,7 +2424,7 @@
    "Grenada",
    "Gwenad"
   ],
-  "image": "img/countries/grenada.webp"
+  "image": "img/countries/grenada.svg"
  },
  {
   "id": "tonga",
@@ -2434,7 +2434,7 @@
    "Kingdom of Tonga",
    "Puleanga Fakatui o Tonga"
   ],
-  "image": "img/countries/tonga.webp"
+  "image": "img/countries/tonga.svg"
  },
  {
   "id": "saint-vincent-and-the-grenadines",
@@ -2444,7 +2444,7 @@
    "Saint Vincent",
    "Hairouna"
   ],
-  "image": "img/countries/saint-vincent-and-the-grenadines.webp"
+  "image": "img/countries/saint-vincent-and-the-grenadines.svg"
  },
  {
   "id": "micronesia",
@@ -2454,7 +2454,7 @@
    "Federated States of Micronesia",
    "FSM"
   ],
-  "image": "img/countries/micronesia.webp"
+  "image": "img/countries/micronesia.svg"
  },
  {
   "id": "saint-kitts-and-nevis",
@@ -2469,7 +2469,7 @@
    "Saint Kitts or Saint Christopher",
    "Liamuiga and Oualie names of the of Saint Kitts and Nevis"
   ],
-  "image": "img/countries/saint-kitts-and-nevis.webp"
+  "image": "img/countries/saint-kitts-and-nevis.svg"
  },
  {
   "id": "kiribati",
@@ -2481,7 +2481,7 @@
    "Gilbert Islands",
    "Kingsmill Group"
   ],
-  "image": "img/countries/kiribati.webp"
+  "image": "img/countries/kiribati.svg"
  },
  {
   "id": "san-marino",
@@ -2494,7 +2494,7 @@
    "Most Serene Republic of San Marino",
    "Serenissima Repubblica di San Marino"
   ],
-  "image": "img/countries/san-marino.webp"
+  "image": "img/countries/san-marino.svg"
  },
  {
   "id": "palau",
@@ -2504,7 +2504,7 @@
    "Republic of Palau",
    "Belau"
   ],
-  "image": "img/countries/palau.webp"
+  "image": "img/countries/palau.svg"
  },
  {
   "id": "marshall-islands",
@@ -2514,7 +2514,7 @@
    "Republic of the Marshall Islands",
    "Aolepn Aorkin aje"
   ],
-  "image": "img/countries/marshall-islands.webp"
+  "image": "img/countries/marshall-islands.svg"
  },
  {
   "id": "monaco",
@@ -2527,7 +2527,7 @@
    "Principato di Monaco",
    "Principat de Mnegue"
   ],
-  "image": "img/countries/monaco.webp"
+  "image": "img/countries/monaco.svg"
  },
  {
   "id": "nauru",
@@ -2538,7 +2538,7 @@
    "Repubrikin Naoero",
    "Pleasant Island"
   ],
-  "image": "img/countries/nauru.webp"
+  "image": "img/countries/nauru.svg"
  },
  {
   "id": "tuvalu",
@@ -2547,7 +2547,7 @@
    "Tuvalu",
    "Ellice Islands"
   ],
-  "image": "img/countries/tuvalu.webp"
+  "image": "img/countries/tuvalu.svg"
  },
  {
   "id": "vatican-city",
@@ -2559,6 +2559,6 @@
    "Stato della Citt del Vaticano",
    "Holy See"
   ],
-  "image": "img/countries/vatican-city.webp"
+  "image": "img/countries/vatican-city.svg"
  }
 ]

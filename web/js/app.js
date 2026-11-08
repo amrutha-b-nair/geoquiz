@@ -31,6 +31,7 @@
   // ---------- Screens ----------
   function show(screen) {
     document.querySelectorAll('.screen').forEach((el) => el.classList.toggle('active', el.id === `screen-${screen}`));
+    document.body.dataset.screen = screen;
     window.scrollTo(0, 0);
   }
 
