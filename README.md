@@ -22,15 +22,16 @@ web/                    ← the app (this folder is what gets published)
   css/style.css
   js/app.js             quiz logic and UI
   js/match.js           answer matching (exact, alternative names, typo tolerance)
-  js/match.test.js      tests: node --test web/js/match.test.js
+  js/match.test.js      unit tests (npm run test:unit)
   data/countries.json   countries, alternative names, image paths (difficulty order)
-  img/countries/*.webp  country silhouettes
+  img/countries/*.svg   country silhouettes (drawn from GeoJSON)
   sound/                correct / wrong sounds
   sw.js                 service worker for offline play
   manifest.webmanifest  PWA manifest (install to home screen)
 tools/build_web_data.py regenerates web/data and web/img from python/
+tests/e2e/              browser tests (Playwright)
 python/                 the original Tkinter desktop app and data-prep scripts
-.github/workflows/pages.yml  deploys web/ to GitHub Pages
+.github/                CI, Pages deploy and Dependabot (see below)
 ```
 
 ## Run locally
@@ -43,22 +44,36 @@ python3 -m http.server -d web 8000
 
 Then open http://localhost:8000.
 
+## Tests
+
+```bash
+npm install
+```
+```bash
+npm test
+```
+
+`npm run test:unit` checks answer matching (no install needed). `npm run test:e2e` plays the quiz in Chromium at phone and desktop sizes. The first time, install the browser with `npx playwright install chromium`.
+
+## GitHub Actions
+
+| Workflow | When it runs | What it does |
+|---|---|---|
+| **CI** (`ci.yml`) | Every pull request, and before every deploy | Runs the answer-matching tests. Rebuilds the data with `tools/build_web_data.py` and fails if `web/data` or `web/img` don't match what's committed. Plays the quiz in a real browser on phone and desktop screens (scoring, no scrolling, every country image loads, installable, works offline). |
+| **Deploy to GitHub Pages** (`pages.yml`) | Push to `main` that changes the app, or by hand | Runs CI first and deploys only if it passes. Stamps the offline cache with the commit id, so players get updates automatically. |
+| **Dependabot** (`dependabot.yml`) | Monthly | Opens pull requests to update the actions, Playwright and numpy. |
+
 ## Publish on GitHub Pages
 
 1. Merge into `main`.
 2. In the repo, go to **Settings → Pages → Build and deployment → Source** and select **GitHub Actions**.
-3. The *Deploy to GitHub Pages* workflow publishes `web/` on every push to `main` that changes it. You can also run it by hand from the **Actions** tab.
-
-When you change files in `web/`, bump `VERSION` in `web/sw.js` so returning players get the update and not their cached copy.
+3. The *Deploy to GitHub Pages* workflow tests and then publishes `web/` on every push to `main` that changes it. You can also run it by hand from the **Actions** tab.
 
 ## Turning it into a mobile app later
 
 `web/` is a self-contained static site, so any WebView wrapper can use it directly.
 
 - **Capacitor** (recommended, Android + iOS):
-  ```bash
-  npm init -y
-  ```
   ```bash
   npm i @capacitor/core @capacitor/cli @capacitor/android @capacitor/ios
   ```
@@ -78,7 +93,11 @@ The layout already handles phone notches and safe areas, dark mode and touch inp
 
 ## Updating the country data
 
-The shapes and names come from the original Python project in `python/`. After changing `python/geoquiz/csv/selected_names.csv` or the images, regenerate the web data (requires Pillow):
+Names come from `python/geoquiz/csv/selected_names.csv` and shapes from the GeoJSON files in `python/geojson files/`. The build script draws each country as an SVG. Parts far from the mainland, such as Alaska, Hawaii or French Guiana, go in dashed boxes beside it. They're at the same scale, so their sizes are accurate, but the distance between them isn't shown. After changing the data, regenerate it and commit the result (CI checks this):
+
+```bash
+pip install -r tools/requirements.txt
+```
 
 ```bash
 python3 tools/build_web_data.py
