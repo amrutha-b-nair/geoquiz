@@ -29,7 +29,9 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   const { request } = event;
-  if (request.method !== 'GET' || new URL(request.url).origin !== location.origin) return;
+  const url = new URL(request.url);
+  if (request.method !== 'GET' || url.origin !== location.origin) return;
+  if (url.pathname.includes('/api/')) return; // live leaderboard data must never come from the cache
   event.respondWith(
     caches.match(request).then((cached) =>
       cached ||

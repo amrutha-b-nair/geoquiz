@@ -16,6 +16,83 @@
     timer: null,
   };
 
+  // ---------- Leaderboard (only with the geoquiz-scores backend) ----------
+  // The backend in server/ sets this cookie when it serves the page. On a static
+  // host such as GitHub Pages there is no cookie, so no API requests are made.
+  const API_ENABLED = document.cookie.split('; ').includes('geoquiz_api=1');
+  const NAME_KEY = 'geoquiz-player-name';
+  let lastResult = null;
+
+  function setSaveStatus(text, bad) {
+    const el = $('save-status');
+    el.textContent = text;
+    el.classList.toggle('bad', !!bad);
+  }
+
+  async function loadLeaderboard() {
+    const list = $('leaderboard');
+    try {
+      const res = await fetch('api/leaderboard?limit=10');
+      if (!res.ok) throw new Error(`server said ${res.status}`);
+      const { scores } = await res.json();
+      list.replaceChildren(...scores.map((s) => {
+        const li = document.createElement('li');
+        const row = document.createElement('span');
+        row.className = 'lb-row';
+        const name = document.createElement('span');
+        name.className = 'lb-name';
+        name.textContent = s.name;
+        const score = document.createElement('span');
+        score.className = 'lb-score';
+        score.textContent = `${s.score} / ${s.total}`;
+        row.append(name, score);
+        li.append(row);
+        return li;
+      }));
+      if (!scores.length) setSaveStatus('No scores yet. Be the first!');
+    } catch (err) {
+      list.replaceChildren();
+      setSaveStatus(`Could not load the leaderboard (${err.message}).`, true);
+    }
+  }
+
+  function showLeaderboard(score, answered) {
+    if (!API_ENABLED) return;
+    lastResult = answered > 0 ? { score, total: answered } : null;
+    $('save-form').hidden = !lastResult;
+    $('save-btn').disabled = false;
+    try { $('player-name').value = localStorage.getItem(NAME_KEY) || ''; } catch { /* storage may be blocked */ }
+    setSaveStatus('');
+    $('leaderboard-wrap').hidden = false;
+    loadLeaderboard();
+  }
+
+  async function saveScore() {
+    if (!lastResult) return;
+    const name = $('player-name').value.trim();
+    if (!name) return;
+    try { localStorage.setItem(NAME_KEY, name); } catch { /* storage may be blocked */ }
+    $('save-btn').disabled = true;
+    setSaveStatus('Saving…');
+    try {
+      const res = await fetch('api/scores', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, ...lastResult }),
+      });
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body.error || `server said ${res.status}`);
+      }
+      $('save-form').hidden = true;
+      setSaveStatus('Score saved.');
+      loadLeaderboard();
+    } catch (err) {
+      $('save-btn').disabled = false;
+      setSaveStatus(`Could not save: ${err.message}.`, true);
+    }
+  }
+
   // ---------- Sound ----------
   const sounds = {
     correct: new Audio('sound/correct.wav'),
@@ -194,6 +271,7 @@
     }));
     $('missed-wrap').hidden = state.missed.length === 0;
     show('results');
+    showLeaderboard(state.score, answered);
     $('again-btn').focus();
   }
 
@@ -217,6 +295,10 @@
     $('quit-btn').addEventListener('click', finishQuiz);
     $('again-btn').addEventListener('click', startQuiz);
     $('home-btn').addEventListener('click', () => show('home'));
+    $('save-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      saveScore();
+    });
   }
 
   async function init() {

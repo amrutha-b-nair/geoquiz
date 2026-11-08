@@ -28,6 +28,8 @@ web/                    ← the app (this folder is what gets published)
   sound/                correct / wrong sounds
   sw.js                 service worker for offline play
   manifest.webmanifest  PWA manifest (install to home screen)
+server/                 geoquiz-scores: optional Go leaderboard API (see server/README.md)
+docs/sre/               a hands-on SRE course built around operating server/
 tools/build_web_data.py regenerates web/data and web/img from python/
 tests/e2e/              browser tests (Playwright)
 python/                 the original Tkinter desktop app and data-prep scripts
@@ -43,6 +45,14 @@ python3 -m http.server -d web 8000
 ```
 
 Then open http://localhost:8000.
+
+To play with the **leaderboard**, run the Go backend instead. It serves the game and the API together:
+
+```bash
+cd server && go run .
+```
+
+Then open http://localhost:8080. See [server/README.md](server/README.md).
 
 ## Tests
 

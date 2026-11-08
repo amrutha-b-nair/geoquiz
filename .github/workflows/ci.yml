@@ -24,6 +24,22 @@ jobs:
           node-version: 24
       - run: npm run test:unit
 
+  server:
+    name: Leaderboard API (Go)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: server
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: server/go.mod
+          cache: false # no dependencies to cache
+      - run: test -z "$(gofmt -l .)" || { gofmt -l .; echo "::error::Run gofmt -w ."; exit 1; }
+      - run: go vet ./...
+      - run: go test ./...
+
   data:
     name: Generated data is up to date
     runs-on: ubuntu-latest

@@ -135,6 +135,17 @@ input:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
 .missed img { width: 80px; height: 80px; object-fit: contain; }
 h3 { margin-top: 0; }
 
+#save-form { margin-bottom: 4px; }
+#save-form[hidden] { display: none; }
+.save-status { min-height: 1.5em; margin: 0 0 8px; color: var(--muted); font-size: .9rem; }
+.save-status.bad { color: var(--bad); }
+.leaderboard { margin: 0; padding-left: 1.6em; }
+.leaderboard li { padding: 4px 0; border-bottom: 1px solid var(--border); }
+.leaderboard li:last-child { border-bottom: 0; }
+.leaderboard .lb-row { display: flex; justify-content: space-between; gap: 12px; }
+.leaderboard .lb-name { overflow-wrap: anywhere; }
+.leaderboard .lb-score { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
 .credits { text-align: center; font-size: .8rem; color: var(--muted); padding: 16px; }
 .credits a { color: inherit; }
 

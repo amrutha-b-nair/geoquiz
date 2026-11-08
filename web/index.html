@@ -85,6 +85,17 @@
           <button type="button" class="btn" id="home-btn">Change settings</button>
         </div>
       </div>
+      <!-- Only shown when the page is served by the geoquiz-scores backend (server/) -->
+      <div class="card" id="leaderboard-wrap" hidden>
+        <h3>Leaderboard</h3>
+        <form id="save-form" class="answer">
+          <input id="player-name" type="text" maxlength="24" placeholder="Your name" aria-label="Your name"
+                 autocomplete="nickname" required>
+          <button type="submit" class="btn primary" id="save-btn">Save score</button>
+        </form>
+        <p class="save-status" id="save-status" role="status"></p>
+        <ol class="leaderboard" id="leaderboard"></ol>
+      </div>
       <div class="card" id="missed-wrap" hidden>
         <h3>Countries to review</h3>
         <ul class="missed" id="missed"></ul>

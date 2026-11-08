@@ -1,0 +1,39 @@
+# systemd unit for geoquiz-scores. Install with scripts/install.sh, or by hand
+# (see docs/sre/week-01.md). After editing: sudo systemctl daemon-reload
+[Unit]
+Description=GeoQuiz leaderboard API (geoquiz-scores)
+After=network.target
+# If the service crashes 5 times within 60 seconds, systemd stops restarting it
+# ("start-limit-hit"). You'll see this in the crash-loop lab.
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=geoquiz
+Group=geoquiz
+ExecStart=/usr/local/bin/geoquiz-scores
+Environment=ADDR=:8080
+Environment=DATA_DIR=/var/lib/geoquiz-scores
+Environment=WEB_DIR=/opt/geoquiz/web
+# PRACTICE ONLY: enables /api/debug/chaos/*. Never use this on a real server.
+Environment=CHAOS=1
+
+# Creates /var/lib/geoquiz-scores, owned by the service user.
+StateDirectory=geoquiz-scores
+
+# Restart after a crash (non-zero exit, killed by a signal), wait 2s first.
+Restart=on-failure
+RestartSec=2
+# `systemctl stop` sends SIGTERM, waits this long, then sends SIGKILL.
+TimeoutStopSec=15
+
+# Resource limits, used by the week-1 labs.
+# Max open file descriptors (files + network connections) for the process:
+LimitNOFILE=512
+# Max memory for the service's cgroup; going over gets the process OOM-killed:
+MemoryMax=300M
+MemorySwapMax=0
+
+[Install]
+WantedBy=multi-user.target

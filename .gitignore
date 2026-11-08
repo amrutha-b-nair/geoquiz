@@ -4,3 +4,7 @@ node_modules/
 .DS_Store
 playwright-report/
 test-results/
+
+# geoquiz-scores (server/)
+server/data/
+server/geoquiz-scores
